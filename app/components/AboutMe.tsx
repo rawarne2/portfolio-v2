@@ -3,7 +3,7 @@ import SectionCard from "./SectionCard";
 
 export default function AboutMe() {
   return (
-    <SectionCard title="Projects">
+    <SectionCard title="Projects" id="about-me">
       <p>
         Hello! I am a Fullstack Developer with a passion for creating web and
         mobile applications. I am currently looking for a full-time position

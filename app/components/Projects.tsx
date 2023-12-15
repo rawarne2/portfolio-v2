@@ -16,7 +16,7 @@ export interface ProjectProps {
 
 export const Projects: React.FC<ProjectProps> = ({ projects }) => {
   return (
-    <SectionCard title="Projects">
+    <SectionCard title="Projects" id="projects">
       {projects?.map((project) => (
         <div key={project.id} className="p-4 dark:bg-gray-400 rounded-lg">
           <h3 className="text-lg font-bold mb-2">{project.title}</h3>

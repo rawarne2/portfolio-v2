@@ -5,7 +5,7 @@ const blogs = ["Blog 1", "Blog 2", "Blog 3"];
 
 export default function Blogs() {
   return (
-    <SectionCard title="Blogs">
+    <SectionCard title="Blogs" id="blogs">
       <ul>
         {blogs.map((blog, index) => {
           return (

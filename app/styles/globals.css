@@ -28,3 +28,30 @@ body {
   margin: 0;
   padding: 12;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+nav a.active {
+  color: #ffcc00; /* fix Highlight color */
+}
+
+section {
+  margin-top: 150px; /* Add margin for visibility of the active section */
+}
