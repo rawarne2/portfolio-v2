@@ -1,12 +1,3 @@
-// import React from "react";
-
-// export default function Header() {
-//   return (
-//     <h1 className="text-3xl font-medium capitalize my-8 text-center">
-//       Rashaun Warner&apos;s Portfolio
-//     </h1>
-//   );
-// }
 "use client";
 // components/Header.tsx
 import React, { useEffect, useState } from "react";
@@ -16,6 +7,7 @@ const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
+    // not working yet
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const sections = document.querySelectorAll("section");
@@ -38,13 +30,14 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className="text-3xl font-medium capitalize my-8 text-center">
+    <div className="mt-24">
+      <h1 className="text-3xl font-medium capitalize text-center">
         Rashaun Warner&apos;s Portfolio
       </h1>
       <nav>
         <Link href="#about-me">About Me</Link>
         <Link href="#skills">My Skills</Link>
+        <Link href="#experience">Experience</Link>
         <Link href="#projects">Projects</Link>
         <Link href="#blogs">Blogs</Link>
       </nav>
