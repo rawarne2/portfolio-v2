@@ -1,3 +1,8 @@
+<!-- create a readme for my portfolio website? -->
+Here is a simple and elegant website designed to showcase my work, skills, and personality. The website features a responsive layout that looks great on all devices. This will be available on or before January 14, 2024 at RashaunWarner.com to replace the old website. 
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
