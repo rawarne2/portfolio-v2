@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Projects } from "./components/Projects";
 import Skills from "./components/Skills";
-import projects from "./pages/api/projects";
+import { projects } from "./lib/data";
 
 export default function Home() {
   return (

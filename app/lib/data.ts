@@ -1,14 +1,14 @@
 import { IProject } from "@/app/components/Projects";
 
 
-const projects: IProject[] = [
+export const projects: IProject[] = [
   {
     id: 1,
     title: "NutriYum",
     description: "Description of Project 1",
     technologies: ["React Native", "Node.js", "Express", "Postgres"],
     github: "https://github.com/NutriYum/NutriYum",
-    liveDemo: "https://www.youtube.com/watch?time_continue=2&v=C6Lc_XBkEWU&embeds_referring_euri=http%3A%2F%2Fwww.rashaunwarner.com%2F&embeds_referring_origin=http%3A%2F%2Fwww.rashaunwarner.com&source_ve_path=Mjg2NjY&feature=emb_logo&ab_channel=DanFeeney",
+    liveDemo: "https://www.youtube.com/watch?v=C6Lc_XBkEWU&t=2s&ab_channel=DanFeeney",
   },
   {
     id: 2,
@@ -45,6 +45,3 @@ const projects: IProject[] = [
   },
   // Add more projects as needed
 ];
-
-
-export default projects;
