@@ -1,24 +1,16 @@
 import React from "react";
 import SectionCard from "./SectionCard";
+import { IProject } from "../lib/data";
 
-export interface IProject {
-  id: number;
-  title: string;
-  description: string;
-  technologies: string[];
-  github: string;
-  liveDemo: string;
+export interface IProjectProps {
+  projects: IProject[];
 }
-
-export interface ProjectProps {
-  projects?: IProject[];
-}
-
-export const Projects: React.FC<ProjectProps> = ({ projects }) => {
+// make a button - Demo - to show demos if there is one
+export const Projects: React.FC<IProjectProps> = ({ projects }) => {
   return (
     <SectionCard title="Projects" id="projects">
       <div className="flex flex-col justify-center">
-        {projects?.map((project) => (
+        {projects.map((project) => (
           <div key={project.id}>
             <ul className="w-full">
               <li
@@ -29,7 +21,10 @@ export const Projects: React.FC<ProjectProps> = ({ projects }) => {
                   <strong>{project.title}</strong>
                 </h3>
                 <p>{project.description}</p>
-                <p>Technologies: {project.technologies.join(", ")}</p>
+                <p>
+                  <strong>Technologies: </strong>
+                  {project.technologies.join(", ")}
+                </p>
                 <p>
                   <strong>Github:</strong>{" "}
                   <a
@@ -43,12 +38,12 @@ export const Projects: React.FC<ProjectProps> = ({ projects }) => {
                 <p>
                   <strong>Live Demo:</strong>{" "}
                   <a
-                    href={project.liveDemo}
+                    href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     CLICK HERE
-                    {/* {project.liveDemo} */}
+                    {/* {project.demo} */}
                   </a>
                 </p>
               </li>
