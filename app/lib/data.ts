@@ -71,8 +71,23 @@ export const projects: IProject[] = [
   },
 ];
 
-export const experienceData = [
+export interface IExperienceData {
+  cardDetailedText?: string;
+  cardSubtitle?: string;
+  cardTitle?: string;
+  date: string;
+  media: object;
+  id: number;
+  company: string;
+  jobTitle: string;
+  location: string;
+  description: string;
+  tools: string[];
+}
+
+export const experienceData: IExperienceData[] = [
   {
+    media: {},
     id: 1,
     company: "84.51",
     jobTitle: "Developer Apprentice",
@@ -98,6 +113,7 @@ export const experienceData = [
     ],
   },
   {
+    media: {},
     id: 2,
     company: "Kinetic Vision",
     jobTitle: "Full Stack Web Developer",
@@ -129,6 +145,7 @@ export const experienceData = [
     ],
   },
   {
+    media: {},
     id: 3,
     company: "iFit",
     jobTitle: "Software Engineer",
@@ -155,6 +172,7 @@ export const experienceData = [
     ],
   },
   {
+    media: {},
     id: 4,
     company: "Codementor.io",
     jobTitle: "Freelance Software Engineer and Mentor",
@@ -172,7 +190,7 @@ export const experienceData = [
       "Algorithms",
     ],
   },
-];
+].reverse();
 
 /*
 - consider adding fitness app (describe as full auth using AWS Cognito)

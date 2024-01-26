@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import SectionCard from "./SectionCard";
 import { IProject } from "../lib/data";
