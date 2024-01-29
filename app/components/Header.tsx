@@ -1,47 +1,91 @@
 "use client";
 // components/Header.tsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const Header: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [activeSection, setActiveSection] = useState<string | null>("about-me");
 
   useEffect(() => {
-    // not working yet
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const sections = document.querySelectorAll("section");
+    // scroll to top on initial render
+    window.scrollTo(0, 0);
 
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100; // Adjusted for header height
-        const sectionBottom = sectionTop + section.offsetHeight;
+    // Remove any hash params from the URL
+    if (window.location.hash) {
+      console.log(document.title, window.location.pathname);
+      history.replaceState(null, "", "/");
+    }
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-          setActiveSection(section.id);
+    const sections = document.querySelectorAll("section");
+    console.log({ window });
+    const handler = () => {
+      sections.forEach(({ offsetHeight, offsetTop, id }, i) => {
+        if (
+          window.scrollY + 100 >= offsetTop &&
+          window.scrollY < offsetTop + offsetHeight
+        ) {
+          setActiveSection(id);
         }
       });
     };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    document.addEventListener("scroll", handler);
   }, []);
 
+  // TODO: map over links since they are all the same layout
   return (
-    <div className="mt-24">
+    <header className="mt-24">
+      <nav>
+        <Link
+          href="#about-me"
+          className={activeSection === "about-me" ? "active" : undefined}
+          onClick={() => {
+            setActiveSection("about-me");
+          }}
+        >
+          About Me
+        </Link>
+        <Link
+          href="#skills"
+          className={activeSection === "skills" ? "active" : undefined}
+          onClick={() => {
+            setActiveSection("skills");
+          }}
+        >
+          My Skills
+        </Link>
+        <Link
+          href="#experience"
+          className={activeSection === "experience" ? "active" : undefined}
+          onClick={() => {
+            setActiveSection("experience");
+          }}
+        >
+          Experience
+        </Link>
+        <Link
+          href="#projects"
+          className={activeSection === "projects" ? "active" : undefined}
+          onClick={() => {
+            setActiveSection("projects");
+          }}
+        >
+          Projects
+        </Link>
+        <Link
+          href="#blogs"
+          className={activeSection === "blogs" ? "active" : undefined}
+          onClick={() => {
+            setActiveSection("blogs");
+          }}
+        >
+          Blogs
+        </Link>
+      </nav>
       <h1 className="text-3xl font-medium capitalize text-center">
         Rashaun Warner&apos;s Portfolio
       </h1>
-      <nav>
-        <Link href="#about-me">About Me</Link>
-        <Link href="#skills">My Skills</Link>
-        <Link href="#experience">Experience</Link>
-        <Link href="#projects">Projects</Link>
-        <Link href="#blogs">Blogs</Link>
-      </nav>
-    </div>
+    </header>
   );
 };
 
