@@ -47,12 +47,14 @@ nav a {
   text-decoration: none;
   padding: 5px;
   transition: color 0.3s;
-}
-
-nav a.active {
-  color: #ffcc00; /* fix Highlight color */
+  text-align: center;
+  align-self: center;
 }
 
 section {
   margin-top: 150px; /* Add margin for visibility of the active section */
+}
+
+.active {
+  color: #0080d6;
 }

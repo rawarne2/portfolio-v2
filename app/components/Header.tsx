@@ -8,16 +8,15 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     // scroll to top on initial render
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // TODO: enable for prod
 
     // Remove any hash params from the URL
     if (window.location.hash) {
-      console.log(document.title, window.location.pathname);
       history.replaceState(null, "", "/");
     }
 
     const sections = document.querySelectorAll("section");
-    console.log({ window });
+
     const handler = () => {
       sections.forEach(({ offsetHeight, offsetTop, id }, i) => {
         if (
@@ -29,7 +28,10 @@ const Header: React.FC = () => {
       });
     };
 
-    document.addEventListener("scroll", handler);
+    window.addEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+    };
   }, []);
 
   // TODO: map over links since they are all the same layout
@@ -38,7 +40,7 @@ const Header: React.FC = () => {
       <nav>
         <Link
           href="#about-me"
-          className={activeSection === "about-me" ? "active" : undefined}
+          className={activeSection === "about-me" ? "text-blue-500" : undefined}
           onClick={() => {
             setActiveSection("about-me");
           }}
@@ -47,7 +49,7 @@ const Header: React.FC = () => {
         </Link>
         <Link
           href="#skills"
-          className={activeSection === "skills" ? "active" : undefined}
+          className={activeSection === "skills" ? "text-blue-500" : undefined}
           onClick={() => {
             setActiveSection("skills");
           }}
@@ -56,7 +58,9 @@ const Header: React.FC = () => {
         </Link>
         <Link
           href="#experience"
-          className={activeSection === "experience" ? "active" : undefined}
+          className={
+            activeSection === "experience" ? "text-blue-500" : undefined
+          }
           onClick={() => {
             setActiveSection("experience");
           }}
@@ -65,7 +69,7 @@ const Header: React.FC = () => {
         </Link>
         <Link
           href="#projects"
-          className={activeSection === "projects" ? "active" : undefined}
+          className={activeSection === "projects" ? "text-blue-500" : undefined}
           onClick={() => {
             setActiveSection("projects");
           }}
@@ -74,7 +78,7 @@ const Header: React.FC = () => {
         </Link>
         <Link
           href="#blogs"
-          className={activeSection === "blogs" ? "active" : undefined}
+          className={activeSection === "blogs" ? "text-blue-500" : undefined}
           onClick={() => {
             setActiveSection("blogs");
           }}
