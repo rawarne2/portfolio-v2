@@ -1,6 +1,7 @@
 "use client";
 
 import React, { ReactNode, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 export interface SectionCardProps {
   title: string;
@@ -19,9 +20,7 @@ const SectionCard: React.FC<SectionCardProps> = ({ title, id, children }) => {
           history.replaceState(null, document.title, `#${id}`);
         }
       },
-      {
-        threshold: 0.5,
-      }
+      { threshold: 0.5 }
     );
 
     const currentSectionRef = sectionRef.current; // Copy ref value to a variable
@@ -38,16 +37,19 @@ const SectionCard: React.FC<SectionCardProps> = ({ title, id, children }) => {
   }, [id]);
 
   return (
-    <section
-      className="container mx-auto my-8 scroll-mt-20 px-4"
+    <motion.section
+      className="container my-4 md:my-8 scroll-mt-20 md:w-3/4"
       id={id}
       ref={sectionRef}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
     >
       <h2 className="text-3xl font-bold mb-4">{title}</h2>
-      <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6">
+      <div className="bg-white dark:bg-[rgb(17,23,35)] rounded-lg p-2 md:p-8">
         {children}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

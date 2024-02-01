@@ -28,10 +28,9 @@ export default function Experience() {
               <h3>{job.jobTitle}</h3>
             </strong>
             <h4>{job.location}</h4>
-            <p style={{ textAlign: "left", marginTop: "10px" }}>
-              {job.description}
-            </p>
+            <p className="text-left mt-2">{job.description}</p>
             {/* <p>{job.tools.toString()}</p> */}
+            {/* TODO: make a tag component and add here */}
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
