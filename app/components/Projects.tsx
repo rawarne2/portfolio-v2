@@ -11,7 +11,7 @@ import Link from "next/link";
 export interface IProjectProps {
   projects: IProject[];
 }
-// style={{ height: 25, width: 25 }} for icon
+
 export const Projects: React.FC<IProjectProps> = ({ projects }) => {
   return (
     <SectionCard title="Projects" id="projects">
@@ -31,7 +31,7 @@ export const Projects: React.FC<IProjectProps> = ({ projects }) => {
                   style={{ height: 35, width: 35 }}
                 />
                 {project.link && (
-                  <Link href={project.link}>
+                  <Link href={project.link} target="_blank">
                     <FaExternalLinkAlt
                       style={{ height: 25, width: 25, marginLeft: 12 }}
                     />

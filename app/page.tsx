@@ -1,5 +1,5 @@
 import AboutMe from "./components/AboutMe";
-import Blogs from "./components/Blogs";
+import { Blogs } from "./components/Blogs";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";

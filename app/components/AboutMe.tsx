@@ -25,9 +25,11 @@ export default function AboutMe() {
       />
       <SectionCard title="About Me" id="about-me">
         <>
-          {/* 
-          - add that this is a work in progress with last release date
-        */}
+          <h4 className="italic">
+            This website is a work in progress and was created using Next.js.
+            The first release was on February 2, 2024.
+          </h4>
+          <br />
           <p>
             Hello! I am a Fullstack Developer with a passion for creating web
             and mobile applications. I transitioned from a background in health

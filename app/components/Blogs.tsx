@@ -4,7 +4,7 @@ import React from "react";
 import SectionCard from "./SectionCard";
 import { SocialIcon } from "react-social-icons";
 
-export default function Blogs() {
+export const Blogs = () => {
   const blogs = [
     // move to data and name blogsData
     {
@@ -41,11 +41,15 @@ export default function Blogs() {
       {blogs.reverse().map((blog, index) => (
         <div key={index} className="p-4 m-4 dark:bg-gray-500 rounded-md">
           <span className="flex flex-row items-center mb-2 justify-between">
-            <h3 className="text-wrap text-xl font-bold w-3/4">{blog.title}</h3>
+            <h3 className="text-wrap text-xl font-bold w-3/4">
+              <a href={blog.url} target="_blank">
+                {blog.title}
+              </a>
+            </h3>
             <SocialIcon
               className="rounded-full border-[0.15rem] border-white"
               url={blog.url}
-              title="medium"
+              title={blog.title}
             />
           </span>
 
@@ -54,6 +58,4 @@ export default function Blogs() {
       ))}
     </SectionCard>
   );
-}
-
-// TODO: add image and make it link to the blog
+};

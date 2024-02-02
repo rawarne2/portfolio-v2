@@ -1,11 +1,18 @@
-export interface IProject {
+
+import { StaticImageData } from "next/image";
+import nbaStats from "../../public/nbaStats.png";
+import comingSoon from "../../public/comingSoon.png";
+import NutriYumCam from "../../public/NutriYumCam.png";
+import lca from "../../public/lca.png";
+
+export interface IProject { // move data to separate files in /public folder
   id: number;
   title: string;
-  image: string;
+  image: StaticImageData;
   description: string;
   technologies: string[];
   github: string;
-  demo?: string;
+  preview?: string;
   link?: string;
 }
 // add this portfolio site as a project
@@ -14,29 +21,29 @@ export const projects: IProject[] = [
   {
     id: 1,
     title: "Top 5 Dating App",
-    image: "image.png",
+    image: comingSoon,
     description: `Dating app that limits how many people a user 
       can stay matched with at a time to encourage more quality communication`,
     technologies: ["React Native", "Django", "MongoDB"],
     github: "https://github.com/rawarne2/top-five", // make array or combine in github
-    // demo: "", // make a demo
+    // link: "", // make a preview to link
   },
   {
     id: 2,
     title: "NutriYum",
-    image: "image.png",
+    image: NutriYumCam,
     description: `NutriYum is a mobile app built with React Native for iOS and Android. 
       NutriYum keeps track of of all the nutrients in what you eat so you don't have to, 
       making your diet management as simple and easy as possible. All you have to do is 
       snap what you eat then bon appétit!`,
     technologies: ["React Native", "Node.js", "Express", "Postgres"],
     github: "https://github.com/NutriYum/NutriYum",
-    demo: "https://www.youtube.com/watch?v=C6Lc_XBkEWU&t=2s&ab_channel=DanFeeney",
+    link: "https://www.youtube.com/watch?v=C6Lc_XBkEWU&t=2s&ab_channel=DanFeeney",
   },
   {
     id: 3,
     title: "LCA Properties, LLC",
-    image: "image.png",
+    image: lca,
     description: "Angular and Express.js website displaying information about my mom’s rental properties and provides maintenance request form submissions through email. Desktop and mobile friendly. No longer in use after sale of buildings.",
     technologies: ["Angular", "Node.js", "Express"],
     github: "https://github.com/rawarne2/lca-properties",
@@ -45,30 +52,29 @@ export const projects: IProject[] = [
   {
     id: 4,
     title: "NBA Stats Search", // not working! fix!
-    image: "image.png",
+    image: nbaStats,
     description: `This application allows users to search for the major NBA stats 
       by player name. It is made using React and Redux`, // say if this has test and what the data source is
     technologies: ["React", "Node.js", "Express"],
     github: "https://github.com/rawarne2/nba-stats",
-    // demo: "https://nba-stats-search.herokuapp.com/",
     link: "https://nba-stats-search.herokuapp.com/",
 
   },
-  {
-    id: 5,
-    title: "Fullstack Fitness",
-    image: "image.png",
-    description: `Fullstack Fitness is a React Native mobile application 
-      that I created for my Hackathon project at Fullstack Academy. I had 
-      just over 2 class days to work on this project and it was my first 
-      interaction with React Native. This app can track how far you run or 
-      bike and a timer to let you know how long you have been active. There 
-      is also an audible notification every 5 minutes that lets you know how 
-      far you have traveled.`,
-    technologies: ["React"], // add more. look at package.json
-    github: "https://github.com/rawarne2/FullstackFitness2",
-    demo: "https://youtu.be/6APp1UMvJSI?si=AGpHcIOZmxpkZsRf",
-  },
+  // {
+  //   id: 5,
+  //   title: "Fullstack Fitness",
+  //   image: nbaStats,
+  //   description: `Fullstack Fitness is a React Native mobile application 
+  //     that I created for my Hackathon project at Fullstack Academy. I had 
+  //     just over 2 class days to work on this project and it was my first 
+  //     interaction with React Native. This app can track how far you run or 
+  //     bike and a timer to let you know how long you have been active. There 
+  //     is also an audible notification every 5 minutes that lets you know how 
+  //     far you have traveled.`,
+  //   technologies: ["React"], // add more. look at package.json
+  //   github: "https://github.com/rawarne2/FullstackFitness2",
+  //   link: "https://youtu.be/6APp1UMvJSI?si=AGpHcIOZmxpkZsRf",
+  // },
 ];
 
 export interface IExperienceData {
