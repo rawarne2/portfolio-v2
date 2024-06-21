@@ -1,92 +1,37 @@
-"use client";
+'use client';
 // components/Header.tsx
-import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
+import { sections } from '../lib/dataInterfaces';
 
-const Header: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<string | null>("about-me");
-
-  useEffect(() => {
-    // scroll to top on initial render
-    window.scrollTo(0, 0); // TODO: enable for prod
-
-    // Remove any hash params from the URL
-    if (window.location.hash) {
-      history.replaceState(null, "", "/");
-    }
-
-    const sections = document.querySelectorAll("section");
-
-    const handler = () => {
-      sections.forEach(({ offsetHeight, offsetTop, id }, i) => {
-        if (
-          window.scrollY + 100 >= offsetTop &&
-          window.scrollY < offsetTop + offsetHeight
-        ) {
-          setActiveSection(id);
-        }
-      });
-    };
-
-    window.addEventListener("scroll", handler);
-    return () => {
-      window.removeEventListener("scroll", handler);
-    };
-  }, []);
-
-  // TODO: map over links since they are all the same layout
+const Header: React.FC<{
+  handleHeaderClick: (sectionId: string) => void;
+  activeSection: string | null;
+}> = ({ handleHeaderClick, activeSection }) => {
   return (
-    <header className="mt-24">
+    <header className='mt-24' id='header'>
       <nav>
-        <Link
-          href="#about-me"
-          className={activeSection === "about-me" ? "text-blue-500" : undefined}
-          onClick={() => {
-            setActiveSection("about-me");
-          }}
-        >
-          About Me
-        </Link>
-        <Link
-          href="#skills"
-          className={activeSection === "skills" ? "text-blue-500" : undefined}
-          onClick={() => {
-            setActiveSection("skills");
-          }}
-        >
-          My Skills
-        </Link>
-        <Link
-          href="#experience"
-          className={
-            activeSection === "experience" ? "text-blue-500" : undefined
-          }
-          onClick={() => {
-            setActiveSection("experience");
-          }}
-        >
-          Experience
-        </Link>
-        <Link
-          href="#projects"
-          className={activeSection === "projects" ? "text-blue-500" : undefined}
-          onClick={() => {
-            setActiveSection("projects");
-          }}
-        >
-          Projects
-        </Link>
-        <Link
-          href="#blogs"
-          className={activeSection === "blogs" ? "text-blue-500" : undefined}
-          onClick={() => {
-            setActiveSection("blogs");
-          }}
-        >
-          Blogs
-        </Link>
+        {sections.map((section) => (
+          <h2
+            key={`${section.id}-header`}
+            className={`${
+              activeSection === section.id ? 'active' : ''
+            } p-2 rounded-md`}
+          >
+            <Link
+              href={`#${section.id}`}
+              shallow
+              className={`${activeSection === section.id ? 'active' : ''}`}
+              onClick={() => handleHeaderClick(section.id)}
+              prefetch={true}
+              scroll={false}
+            >
+              {section.title}
+            </Link>
+          </h2>
+        ))}
       </nav>
-      <h1 className="text-3xl font-medium capitalize text-center">
+      <h1 className='text-3xl font-medium capitalize text-center'>
         Rashaun Warner&apos;s Portfolio
       </h1>
     </header>

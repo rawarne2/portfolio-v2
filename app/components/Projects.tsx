@@ -1,61 +1,90 @@
-"use client";
+'use client';
 
-import React from "react";
-import SectionCard from "./SectionCard";
-import { IProject } from "../lib/data";
-import Image from "next/image";
-import { SocialIcon } from "react-social-icons";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import Link from "next/link";
+import React, { MutableRefObject } from 'react';
+import SectionCard from './SectionCard';
+import { IProject } from '../lib/dataInterfaces';
+import data from '../../public/data.json';
+import Image from 'next/image';
+import { SocialIcon } from 'react-social-icons';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import Link from 'next/link';
 
 export interface IProjectProps {
-  projects: IProject[];
+  sectionRef: React.RefObject<HTMLDivElement>;
 }
-
-export const Projects: React.FC<IProjectProps> = ({ projects }) => {
+export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
   return (
-    <SectionCard title="Projects" id="projects">
-      {projects.map((project) => (
-        <div
-          key={project.id}
-          className="flex flex-col md:flex-row m-2 md:m-6 mt-4 mb-4 border-4 border-white rounded-md p-4 justify-between"
-        >
-          <div className="flex-col md:flex-[3]">
-            <span className="flex flex-row items-center mb-2 justify-between">
-              <h3 className="text-wrap text-xl font-bold">{project.title}</h3>
-              <span className="flex flex-row justify-between items-center">
-                <SocialIcon
-                  className="rounded-full border-[0.15rem] border-white"
-                  url={project.github}
-                  title="github"
-                  style={{ height: 35, width: 35 }}
-                />
-                {project.link && (
-                  <Link href={project.link} target="_blank">
-                    <FaExternalLinkAlt
-                      style={{ height: 25, width: 25, marginLeft: 12 }}
-                    />
-                  </Link>
-                )}
+    <div
+      key={'projects'}
+      id={'projects'}
+      ref={sectionRef}
+      className='section pt-6'
+    >
+      <SectionCard title='Projects'>
+        {data?.projectsData.map((project: IProject) => (
+          <div
+            key={project.id}
+            className='flex flex-col md:flex-row m-4 rounded-md p-8 justify-between bg-slate-100 text-black border-b-4 border-black'
+          >
+            <div className='flex-col md:flex-[3]'>
+              <span className='flex flex-row items-center mb-2 justify-between'>
+                <h3 className='text-wrap text-xl font-bold'>{project.title}</h3>
+                <span className='flex flex-row justify-between items-center'>
+                  {project.github.map((item, i) => (
+                    <button
+                      className='p-2 m-1 active rounded-md flex items-center justify-center hover:bg-blue-700'
+                      key={item}
+                    >
+                      {'Github'}
+                      <SocialIcon
+                        className='rounded-full ml-2'
+                        url={item}
+                        title='github'
+                        style={{ height: 32, width: 32 }}
+                        bgColor='black'
+                      />
+                    </button>
+                  ))}
+                  {project.link && (
+                    <button className='p-3 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'>
+                      {'View'}
+                      <Link
+                        href={project.link}
+                        target='_blank'
+                        as={project.link}
+                        className='ml-2'
+                      >
+                        <FaExternalLinkAlt style={{ height: 24, width: 24 }} />
+                      </Link>
+                    </button>
+                  )}
+                </span>
               </span>
-            </span>
-            <p>{project.description}</p>
-            <ul className="flex flex-wrap mt-2">
-              {project.technologies.map((item, i) => (
-                <li
-                  key={i}
-                  className="p-1 m-1 dark:bg-gray-500 rounded-md border-[0.15rem] border-white max-w-fit"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
+              <p>{project.description}</p>
+              <ul className='flex flex-wrap mt-2'>
+                {project?.technologies.map((item, i) => (
+                  <li
+                    key={i}
+                    className='p-2 m-1 active rounded-md border-[0.15rem] max-w-fit'
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className='mt-4 md:mt-0 md:flex-1 md:ml-4'>
+              <Image
+                unoptimized={true}
+                src={project.image}
+                alt='Rashaun'
+                className='w-full h-max'
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
-          <div className="mt-4 md:mt-0 md:flex-1 md:ml-4">
-            <Image src={project.image} alt="Rashaun" className="w-full h-max" />
-          </div>
-        </div>
-      ))}
-    </SectionCard>
+        ))}
+      </SectionCard>
+    </div>
   );
 };
