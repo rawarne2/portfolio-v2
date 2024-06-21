@@ -34,6 +34,7 @@ export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
                     <button
                       className='p-2 m-1 active rounded-md flex items-center justify-center hover:bg-blue-700'
                       key={item}
+                      onClick={() => window.open(item, '_blank')}
                     >
                       {'Github'}
                       <SocialIcon
@@ -46,7 +47,10 @@ export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
                     </button>
                   ))}
                   {project.link && (
-                    <button className='p-3 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'>
+                    <button
+                      onClick={() => window.open(project.link, '_blank')}
+                      className='p-3 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'
+                    >
                       {'View'}
                       <Link
                         href={project.link}

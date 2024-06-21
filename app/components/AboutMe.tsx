@@ -39,7 +39,15 @@ export default function AboutMe({
             <div className='text-center'>
               <h2 className='text-l font-medium'>Connect With Me!</h2>
               <div className='flex flex-wrap justify-center'>
-                <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'>
+                <button
+                  onClick={() =>
+                    window.open(
+                      'https://www.linkedin.com/in/rashaun-warner/',
+                      '_blank'
+                    )
+                  }
+                  className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
+                >
                   {'LinkedIn'}
                   <SocialIcon
                     className='rounded-full ml-2'
@@ -48,7 +56,12 @@ export default function AboutMe({
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
-                <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'>
+                <button
+                  onClick={() =>
+                    window.open('https://github.com/rawarne2', '_blank')
+                  }
+                  className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
+                >
                   {'GitHub'}
                   <SocialIcon
                     className='rounded-full ml-2'
@@ -57,7 +70,12 @@ export default function AboutMe({
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
-                <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'>
+                <button
+                  onClick={() =>
+                    window.open('https://medium.com/@Rashaunwarner', '_blank')
+                  }
+                  className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
+                >
                   {'Medium'}
                   <SocialIcon
                     className='rounded-full ml-2'
@@ -66,18 +84,15 @@ export default function AboutMe({
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
-                <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'>
-                  {'Resume'}
-                  <IoMdDownload
-                    style={{ height: 32, width: 32 }}
-                    className='ml-2'
+                <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2'>
+                  <a
+                    download={'RashaunWarnerResume'}
+                    href='/rashaun-warner-resume.pdf'
+                    className='ml-2 flex items-center justify-center'
                   >
-                    <a
-                      download={'RashaunWarnerResume'}
-                      href='/rashaun-warner-resume.pdf'
-                      // style={{ height: 28, width: 28 }}
-                    ></a>
-                  </IoMdDownload>
+                    {'Resume'}
+                    <IoMdDownload style={{ height: 32, width: 32 }} />
+                  </a>
                 </button>
               </div>
             </div>

@@ -24,7 +24,10 @@ export const Blogs = ({
                     {blog.title}
                   </a>
                 </h3>
-                <button className='p-2 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'>
+                <button
+                  onClick={() => window.open(blog.url, '_blank')}
+                  className='p-2 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'
+                >
                   {'Read More'}
                   <SocialIcon
                     className='rounded-full border-[0.15rem] border-white ml-2'
