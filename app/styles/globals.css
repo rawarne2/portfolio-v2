@@ -51,10 +51,21 @@ nav a {
   align-self: center;
 }
 
-section {
-  margin-top: 150px; /* Add margin for visibility of the active section */
+footer {
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  padding: 4px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .active {
-  color: #0080d6;
+  background-color: rgb(53,78,142);
+  color: #fff;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
 }
