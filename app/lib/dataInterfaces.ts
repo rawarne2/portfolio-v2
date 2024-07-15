@@ -1,7 +1,6 @@
-
 import { StaticImageData } from "next/image";
 
-export interface IProject { // move data to separate files in /public folder
+export interface IProject {
   id: number;
   title: string;
   image: StaticImageData | string;

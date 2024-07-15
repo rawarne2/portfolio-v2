@@ -1,6 +1,6 @@
 'use client';
 
-import React, { MutableRefObject } from 'react';
+import React from 'react';
 import SectionCard from './SectionCard';
 import { SocialIcon } from 'react-social-icons';
 import data from '../../public/data.json';
@@ -28,7 +28,7 @@ export const Blogs = ({
                   onClick={() => window.open(blog.url, '_blank')}
                   className='p-2 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'
                 >
-                  {'Read More'}
+                  {'Read Here'}
                   <SocialIcon
                     className='rounded-full border-[0.15rem] border-white ml-2'
                     url={blog.url}
