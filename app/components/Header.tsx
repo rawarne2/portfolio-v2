@@ -21,7 +21,9 @@ const Header: React.FC<{
             <Link
               href={`#${section.id}`}
               shallow
-              className={`${activeSection === section.id ? 'active' : ''}`}
+              className={`${
+                activeSection === section.id ? 'active' : ''
+              } justify-center flex`}
               onClick={() => handleHeaderClick(section.id)}
               prefetch={true}
               scroll={false}
