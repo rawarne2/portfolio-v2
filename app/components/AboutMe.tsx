@@ -2,7 +2,6 @@
 
 import React from 'react';
 import SectionCard from './SectionCard';
-import profilePic from '../../public/profile-pic.jpg';
 import Image from 'next/image';
 import data from '../../public/data.json';
 import { SocialIcon } from 'react-social-icons';
@@ -28,7 +27,9 @@ export default function AboutMe({
             <div className='text-center my-4'>
               <Image
                 unoptimized={true}
-                src={profilePic}
+                src={
+                  'https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/profile-pic.jpg'
+                }
                 alt='Rashaun'
                 width='300'
                 height='300'
@@ -86,9 +87,10 @@ export default function AboutMe({
                 </button>
                 <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2'>
                   <a
-                    download={'RashaunWarnerResume'}
-                    href='/rashaun-warner-resume.pdf'
+                    download={'RashaunWarnerResume.pdf'}
+                    href='https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/rashaun-warner-resume.pdf'
                     className='ml-2 flex items-center justify-center'
+                    target='_blank'
                   >
                     {'Resume'}
                     <IoMdDownload style={{ height: 32, width: 32 }} />
