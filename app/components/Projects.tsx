@@ -43,16 +43,16 @@ export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
               </ul>
             </div>
             {project.image && (
-              <div className='mt-4 md:mt-0 md:flex-1 md:ml-4'>
+              <div className='mt-4 md:mt-0 md:flex-1 md:ml-4 flex flex-col'>
                 <Image
                   unoptimized={true}
                   src={project.image}
                   alt='Rashaun'
-                  className='w-full h-max'
+                  className='h-full w-full rounded-md object-cover mb-4'
                   width={500}
                   height={500}
                 />
-                <span className='flex flex-row items-center'>
+                <span className='flex flex-row items-center justify-center'>
                   {project.github.map((item, i) => (
                     <button
                       className='p-2 m-1 active rounded-md flex items-center justify-center hover:bg-blue-700'

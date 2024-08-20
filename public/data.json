@@ -1,5 +1,5 @@
 {
-  "aboutMeData": "Hello! I am a Fullstack Developer with a passion for creating web and mobile applications. I enjoy solving intricate problems and crafting user-friendly applications using JavaScript, TypeScript, Python, HTML, CSS, and flavors of React. I have developed a diverse skill set by working on various projects at small and large companies, including leading end-to-end solutions and mentoring co-ops at Kinetic Vision, and contributing to high-visibility mobile applications with over 6 million users at iFIT. I transitioned from a background in health and fitness when I discovered my true calling in software development. After graduating college with a Bachelor's degree in Kinesiology, I worked as a Physical Therapy Aide and Fitness Specialist. I discovered that coding was my true passion after teaching myself out of curiosity. So I decided to fully commit and attended Fullstack Academy's immersive software engineering bootcamp, where I gained hands-on experience in fullstack JavaScript and web development. Currently, I am freelancing by training AI models. This website is a work in progress and was built from scratch using Next.js. Last update 8/8/2024.",
+  "aboutMeData": "Hello! I am a Fullstack Developer with a passion for creating web and mobile applications. I enjoy solving intricate problems and crafting user-friendly applications using JavaScript, TypeScript, Python, HTML, CSS, and flavors of React. I have developed a diverse skill set by working on various projects at small and large companies, including leading end-to-end solutions and mentoring co-ops at Kinetic Vision, and contributing to high-visibility mobile applications with over 6 million users at iFIT. I transitioned from a background in health and fitness when I discovered my true calling in software development. After graduating college with a Bachelor's degree in Kinesiology, I worked as a Physical Therapy Aide and Fitness Specialist. I discovered that coding was my true passion after teaching myself out of curiosity. So I decided to fully commit and attended Fullstack Academy's immersive software engineering bootcamp, where I gained hands-on experience in fullstack JavaScript and web development. Currently, I am freelancing by training AI models. This website is a work in progress and was built from scratch using Next.js.",
   "experienceData": [
     {
       "id": 1,
@@ -115,8 +115,8 @@
         "https://github.com/rawarne2/top-five-frontend",
         "https://github.com/rawarne2/top-five-backend"
       ],
-      "image": "https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/top5-logo-square.jpg",
-      "link": "https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/top5-screen-recording.mp4"
+      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/top5-logo-square.jpg",
+      "link": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/top5-screen-recording.mp4"
     },
     {
       "id": 2,
@@ -124,8 +124,8 @@
       "description": "NutriYum is a mobile app built with React Native for iOS and Android. NutriYum keeps track of all the nutrients in what you eat so you don't have to, making your diet management as simple and easy as possible. All you have to do is snap what you eat then bon appétit!",
       "technologies": ["React Native", "Node.js", "Express", "Postgres"],
       "github": ["https://github.com/NutriYum/NutriYum"],
-      "image": "https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/nutri-yum-cam.png",
-      "link": "https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/NutriYum.mp4"
+      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/nutri-yum-cam.png",
+      "link": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/NutriYum.mp4"
     },
     {
       "id": 3,
@@ -133,7 +133,7 @@
       "description": "Angular and Express.js website displaying information about my mom’s rental properties and provides maintenance request form submissions through email. Desktop and mobile friendly. No longer in use after sale of buildings.",
       "technologies": ["Angular", "Node.js", "Express"],
       "github": ["https://github.com/rawarne2/lca-properties"],
-      "image": "https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/lca.png",
+      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/lca.png",
       "link": "http://www.lcaresidentialproperties.com/"
     },
     {
@@ -142,7 +142,7 @@
       "description": "This application allows users to search for the major stats of NBA players from the 2023-24 season. It is made using React and Redux. Updates are needed after API became unavailable. Temporarily using static data that was web scraped with Python.",
       "technologies": ["React", "Redux","Node.js", "Express"],
       "github": ["https://github.com/rawarne2/nba-stats"],
-      "image": "https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/nba-stats.png",
+      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/nba-stats.png",
       "link": "https://nba-stats-search.s3.us-east-2.amazonaws.com/index.html"
     }
   ],

@@ -1,6 +1,6 @@
 # Overview
 
-This is a simple and elegant website designed to showcase my work, skills, and personality. The website features a responsive layout that looks great on all devices and was created using Next.js and TypeScript. This will be available at RashaunWarner.com to replace my old website.
+This is a simple and elegant website designed to showcase my work, skills, and personality. The website features a responsive layout that looks great on all devices and was created using Next.js and TypeScript. Visit this website at RashaunWarner.com. 
 
 ---
 

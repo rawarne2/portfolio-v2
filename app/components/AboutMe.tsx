@@ -28,7 +28,7 @@ export default function AboutMe({
               <Image
                 unoptimized={true}
                 src={
-                  'https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/profile-pic.jpg'
+                  'https://s3.us-east-2.amazonaws.com/rashaunwarner.com/profile-pic.jpg'
                 }
                 alt='Rashaun'
                 width='300'
@@ -88,7 +88,7 @@ export default function AboutMe({
                 <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2'>
                   <a
                     download={'RashaunWarnerResume.pdf'}
-                    href='https://s3.us-east-2.amazonaws.com/www.rashaunwarner.com/rashaun-warner-resume.pdf'
+                    href='https://s3.us-east-2.amazonaws.com/rashaunwarner.com/rashaun-warner-resume.pdf'
                     className='ml-2 flex items-center justify-center'
                     target='_blank'
                   >
