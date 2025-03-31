@@ -21,7 +21,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
       transition={{ delay: 0.175 }}
       {...props}
     >
-      <h2 className='text-3xl font-bold mb-4'>{title}</h2>
+      <h2 className='text-3xl font-bold mb-4 pt-4'>{title}</h2>
       <div className='bg-[rgb(53,78,142)] rounded-lg p-2 md:p-6'>
         {children}
       </div>
