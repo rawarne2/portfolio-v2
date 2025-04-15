@@ -5,10 +5,10 @@ import './styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Rashaun Warner',
-  description: "Rashaun Warner's Portfolio Website",
+  title: 'Firstname Lastname',
+  description: "Firstname Lastname's Portfolio Website",
   icons: {
-    icon: '/profile-pic.ico',
+    icon: '/next.svg',
   },
 };
 

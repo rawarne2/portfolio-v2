@@ -34,7 +34,7 @@ const Header: React.FC<{
         ))}
       </nav>
       <h1 className='text-3xl font-medium capitalize text-center'>
-        Rashaun Warner&apos;s Portfolio
+        Firstname Lastname&apos;s Portfolio
       </h1>
     </header>
   );

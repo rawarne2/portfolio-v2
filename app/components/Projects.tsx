@@ -47,7 +47,7 @@ export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
                 <Image
                   unoptimized={true}
                   src={project.image}
-                  alt='Rashaun'
+                  alt='Firstname Lastname'
                   className='h-full w-full rounded-md object-cover mb-4'
                   width={500}
                   height={500}

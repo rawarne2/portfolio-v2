@@ -28,14 +28,14 @@ export default function AboutMe({
               <Image
                 unoptimized={true}
                 src={
-                  'https://s3.us-east-2.amazonaws.com/rashaunwarner.com/profile-pic.jpg'
+                  'https://picsum.photos/400/400'
                 }
-                alt='Rashaun'
+                alt='Profile Picture'
                 width='300'
                 height='300'
                 className='h-72 w-72 rounded-3xl object-cover'
               />
-              <h3>Cincinnati, Ohio</h3>
+              <h3>Chicago, Ohio</h3>
             </div>
             <div className='text-center'>
               <h2 className='text-l font-medium'>Connect With Me!</h2>
@@ -43,7 +43,7 @@ export default function AboutMe({
                 <button
                   onClick={() =>
                     window.open(
-                      'https://www.linkedin.com/in/rashaun-warner/',
+                      'https://www.linkedin.com',
                       '_blank'
                     )
                   }
@@ -52,43 +52,43 @@ export default function AboutMe({
                   {'LinkedIn'}
                   <SocialIcon
                     className='rounded-full ml-2'
-                    url='https://www.linkedin.com/in/rashaun-warner/'
+                    url='https://www.linkedin.com'
                     title='linkedin'
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
                 <button
                   onClick={() =>
-                    window.open('https://github.com/rawarne2', '_blank')
+                    window.open('https://github.com', '_blank')
                   }
                   className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
                 >
                   {'GitHub'}
                   <SocialIcon
                     className='rounded-full ml-2'
-                    url='https://github.com/rawarne2'
+                    url='https://github.com'
                     title='github'
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
                 <button
                   onClick={() =>
-                    window.open('https://medium.com/@Rashaunwarner', '_blank')
+                    window.open('https://medium.com', '_blank')
                   }
                   className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
                 >
                   {'Medium'}
                   <SocialIcon
                     className='rounded-full ml-2'
-                    url='https://medium.com/@Rashaunwarner'
+                    url='https://medium.com'
                     title='medium'
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
                 <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2'>
                   <a
-                    download={'RashaunWarnerResume.pdf'}
-                    href='https://s3.us-east-2.amazonaws.com/rashaunwarner.com/rashaun-warner-resume.pdf'
+                    download={'Resume.pdf'}
+                    href='https://www.google.com'
                     className='ml-2 flex items-center justify-center'
                     target='_blank'
                   >

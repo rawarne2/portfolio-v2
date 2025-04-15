@@ -8,17 +8,17 @@ export default function Footer() {
     <footer className='flex items-center flex-wrap p-4'>
       <SocialIcon
         className='mx-8 max-sm:mx-2 rounded-full border-[0.15rem] border-white'
-        url='https://www.linkedin.com/in/rashaun-warner/'
+        url='https://www.linkedin.com'
         title='linkedin'
       />
       <SocialIcon
         className='mx-8 max-sm:mx-2 rounded-full border-[0.15rem] border-white'
-        url='https://github.com/rawarne2'
+        url='https://github.com'
         title='github'
       />
       <SocialIcon
         className='mx-8 max-sm:mx-2 rounded-full border-[0.15rem] border-white'
-        url='https://medium.com/@Rashaunwarner'
+        url='https://medium.com'
         title='medium'
       />
     </footer>

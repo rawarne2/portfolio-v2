@@ -1,12 +1,12 @@
 {
-  "aboutMeData": "Hello! I am a Fullstack Developer with a passion for creating web and mobile applications. I enjoy solving intricate problems and crafting user-friendly applications using JavaScript, TypeScript, Python, HTML, CSS, and flavors of React. I have developed a diverse skill set by working on various projects at small and large companies, including leading end-to-end solutions and mentoring co-ops at Kinetic Vision, and contributing to high-visibility mobile applications with over 6 million users at iFIT. I transitioned from a background in health and fitness when I discovered my true calling in software development. After graduating college with a Bachelor's degree in Kinesiology, I worked as a Physical Therapy Aide and Fitness Specialist. I discovered that coding was my true passion after teaching myself out of curiosity. So I decided to fully commit and attended Fullstack Academy's immersive software engineering bootcamp, where I gained hands-on experience in fullstack JavaScript and web development. Currently, I am freelancing by training AI models. This website is a work in progress and was built from scratch using Next.js.",
+  "aboutMeData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
   "experienceData": [
     {
       "id": 1,
-      "company": "DataAnnotations / Outlier.ai",
+      "company": "TechCorp Solutions",
       "jobTitle": "AI Model Trainer",
-      "location": "Cincinnati, OH / Remote",
-      "description": "I train AI models by annotating data, comparing model responses, and thoroughly evaluating response quality. I use JavaScript, Python, and SQL to analyze model responses and create code with instructions for prompts. I check for correctness, verbosity, formatting, alignment with prompt instructions, and more.",
+      "location": "New York, NY / Remote",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "date": "2024 — Present",
       "tools": [
         "Python",
@@ -20,10 +20,10 @@
     },
     {
       "id": 2,
-      "company": "Codementor.io",
+      "company": "CodeMentor Inc",
       "jobTitle": "Software Engineer and Mentor",
-      "location": "Cincinnati, OH / Remote",
-      "description": "Clients schedule mentoring sessions with me for expert guidance in software development. Provide code reviews, write code for various projects, and debug issues.",
+      "location": "San Francisco, CA / Remote",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       "date": "2023 — Present",
       "tools": [
         "React",
@@ -36,10 +36,10 @@
     },
     {
       "id": 3,
-      "company": "iFIT",
+      "company": "TechFitness Solutions",
       "jobTitle": "Software Engineer",
-      "location": "Cincinnati, OH / Remote",
-      "description": "iFIT is a consumer facing application with around 6 million users globally. I have created new features, fixed bugs, tested features, monitored errors, refactored code, and implemented microservices to create Webviews that are displayed in mobile devices and embedded fitness machines. We used TypeScript, AWS, Lambda Serverless, S3, REST, React, Redux, and Node. Worked on high visibility sections of the app, such as the home screen, pre and post workout screens. Collaborated with other teams and helped teammates learn different repos that I had the most experience on.",
+      "location": "Chicago, IL / Remote",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "date": "2020 — 2022",
       "tools": [
         "React",
@@ -54,10 +54,10 @@
     },
     {
       "id": 4,
-      "company": "Kinetic Vision",
+      "company": "VisionTech Solutions",
       "jobTitle": "Full Stack Web Developer",
-      "location": "Cincinnati, OH",
-      "description": "After my apprenticeship, I worked as a Fullstack Web Developer at Kinetic Vision for 13 months. I started off working closely with and learning from the lead developer, and eventually began leading my own projects with co-ops. At this company, I help plan and develop projects from beginning to end. This includes scoping, estimates, feature design, development, bug fixes, code reviews, documentation, and deployment. I also meet with clients to review features and discuss next steps. In addition, I helped mentor co-ops and other developers improve their skills and share knowledge about different projects.",
+      "location": "Boston, MA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "date": "2019 — 2020",
       "tools": [
         "React",
@@ -76,10 +76,10 @@
     },
     {
       "id": 5,
-      "company": "84.51",
+      "company": "DataTech Solutions",
       "jobTitle": "Developer Apprentice",
-      "location": "Cincinnati, OH",
-      "description": "After my bootcamp, I did an apprenticeship at 84.51 for about 7 months. I learned a variety of new skills on the job such as Java, Spring Boot, Angular to name a few. I was developing enterprise level, production code while pair programming or working solo. I had a mentor from a company called Launch Scout (formerly named Gaslight) who helped me get up to speed on new languages, frameworks, paradigms, best practices, and more so that I can begin my career on the right foot. The apprenticeship also included book clubs, algorithm challenges, and side projects.",
+      "location": "Seattle, WA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "date": "2018 — 2019",
       "tools": [
         "Angular",
@@ -96,8 +96,8 @@
   "projectsData": [
     {
       "id": 1,
-      "title": "Top 5 Dating App",
-      "description": "Dating app that limits how many people a user can stay matched with at a time to encourage more quality communication. Please do not use or share this project idea in any way. This is an active solo project. Click 'View' to see a screen recording of the project so far.",
+      "title": "Dating App",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": [
         "TypeScript",
         "Python",
@@ -112,61 +112,61 @@
         "Django Testing Framework"
       ],
       "github": [
-        "https://github.com/rawarne2/top-five-frontend",
-        "https://github.com/rawarne2/top-five-backend"
+        "https://github.com",
+        "https://github.com"
       ],
-      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/top5-logo-square.jpg",
-      "link": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/top5-screen-recording.mp4"
+      "image": "https://picsum.photos/400/400",
+      "link": "https://example.com/video.mp4"
     },
     {
       "id": 2,
-      "title": "NutriYum",
-      "description": "NutriYum is a mobile app built with React Native for iOS and Android. NutriYum keeps track of all the nutrients in what you eat so you don't have to, making your diet management as simple and easy as possible. All you have to do is snap what you eat then bon appétit!",
+      "title": "Food n Stuff",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["React Native", "Node.js", "Express", "Postgres"],
-      "github": ["https://github.com/NutriYum/NutriYum"],
-      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/nutri-yum-cam.png",
-      "link": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/NutriYum.mp4"
+      "github": ["https://github.com"],
+      "image": "https://picsum.photos/400/400",
+      "link": "https://example.com/video.mp4"
     },
     {
       "id": 3,
-      "title": "LCA Properties, LLC",
-      "description": "Angular and Express.js website displaying information about my mom’s rental properties and provides maintenance request form submissions through email. Desktop and mobile friendly. No longer in use after sale of buildings.",
+      "title": "Property Management System",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["Angular", "Node.js", "Express"],
-      "github": ["https://github.com/rawarne2/lca-properties"],
-      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/lca.png",
-      "link": "http://www.lcaresidentialproperties.com/"
+      "github": ["https://github.com"],
+      "image": "https://picsum.photos/400/400",
+      "link": "https://example.com"
     },
     {
       "id": 4,
-      "title": "NBA Stats Search",
-      "description": "This application allows users to search for the major stats of NBA players from the 2023-24 season. It is made using React and Redux. Updates are needed after API became unavailable. Temporarily using static data that was web scraped with Python.",
+      "title": "Sports Stats Search",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["React", "Redux","Node.js", "Express"],
-      "github": ["https://github.com/rawarne2/nba-stats"],
-      "image": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/nba-stats.png",
-      "link": "https://nba-stats-search.s3.us-east-2.amazonaws.com/index.html"
+      "github": ["https://github.com"],
+      "image": "https://picsum.photos/400/400",
+      "link": "https://example.com"
     }
   ],
   "blogsData": [
     {
       "id": 1,
       "title": "New JavaScript Features from ECMAScript 2023 (ES14)",
-      "image": "image",
-      "overview": "The 14th edition of ECMAScript was released in June 2023 and introduced several new features in JavaScript. It includes the array methods toReversed, toSorted, toSpliced, with, findLast, and findLastIndex, as well as hashbang comments support (#!) and the use of Symbols as key in weak collections.",
-      "url": "https://medium.com/@Rashaunwarner/new-javascript-features-from-ecmascript-2023-es14-b1c2247bd965"
+      "image": "https://picsum.photos/400/400",
+      "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "url": "https://example.com/blog1"
     },
     {
       "id": 2,
       "title": "Are You Accidentally Rounding Numbers in JavaScript???",
-      "image": "image",
-      "overview": "Learn how BigInt is used with large numbers to prevent unintentionally rounding.",
-      "url": "https://medium.com/@Rashaunwarner/are-you-accidentally-rounding-numbers-in-javascript-c3b90cb04697"
+      "image": "https://picsum.photos/400/400",
+      "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "url": "https://example.com/blog2"
     },
     {
       "id": 3,
       "title": "New ES8 Features",
-      "image": "image",
-      "overview": "ECMAScript 2017 (ES8) was finalized in June 2017. This article will go over some of the main features that can make your code cleaner and easier to write. This explains how to use new Object and String methods, trailing commas in function parameters, and Async functions.",
-      "url": "https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c"
+      "image": "https://picsum.photos/400/400",
+      "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqu aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "url": "https://example.com/blog3"
     }
   ],
   "skillsData": [
