@@ -2,17 +2,17 @@
 
 import React, { MutableRefObject } from 'react';
 import SectionCard from './SectionCard';
-import { IProject } from '../lib/dataInterfaces';
+import { Project } from '../lib/schema';
 import data from '../../public/data.json';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import Link from 'next/link';
 
-export interface IProjectProps {
+export interface ProjectProps {
   sectionRef: React.RefObject<HTMLDivElement>;
 }
-export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
+export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
   return (
     <div
       key={'projects'}
@@ -21,7 +21,7 @@ export const Projects: React.FC<IProjectProps> = ({ sectionRef }) => {
       className='section pt-6'
     >
       <SectionCard title='Projects'>
-        {data?.projectsData.map((project: IProject) => (
+        {data?.projectsData.map((project: Project) => (
           <div
             key={project.id}
             className='flex flex-col md:flex-row m-4 rounded-md p-8 justify-between bg-slate-100 text-black border-b-4 border-black'

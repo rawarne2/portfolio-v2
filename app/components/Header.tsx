@@ -2,7 +2,7 @@
 // components/Header.tsx
 import React from 'react';
 import Link from 'next/link';
-import { sections } from '../lib/dataInterfaces';
+import { sections } from '../lib/schema';
 
 const Header: React.FC<{
   handleHeaderClick: (sectionId: string) => void;

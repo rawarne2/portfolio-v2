@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import { Projects } from './components/Projects';
 import Skills from './components/Skills';
-import { sections } from './lib/dataInterfaces';
+import { sections } from './lib/schema';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {

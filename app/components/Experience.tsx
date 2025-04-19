@@ -7,7 +7,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import SectionCard from './SectionCard';
-import { IExperienceData } from '../lib/dataInterfaces';
+import { ExperienceData } from '../lib/schema';
 import data from '../../public/data.json';
 import { CgWorkAlt } from 'react-icons/cg';
 
@@ -25,7 +25,7 @@ export default function Experience({
     >
       <SectionCard title='Experience'>
         <VerticalTimeline layout='1-column-left'>
-          {data?.experienceData.map((job: IExperienceData, index: number) => (
+          {data?.experienceData.map((job: ExperienceData, index: number) => (
             <VerticalTimelineElement
               visible={true}
               date={job.date}
