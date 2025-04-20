@@ -24,6 +24,7 @@ export default function Home() {
 
   // always start at about-me section
   useEffect(() => {
+    // start at about-me section
     router.push('#about-me', {
       scroll: false,
     });
@@ -31,15 +32,13 @@ export default function Home() {
       top: 0,
       behavior: 'instant',
     });
-  }, []);
 
-  useEffect(() => {
-    // set active section when scrolling
+    // observer for active section
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return;
 
-        // set active section
+        // set active section if it is not already active and the section is in the viewport
         if (entry.isIntersecting && entry.target.id !== activeSection) {
           setActiveSection(entry.target.id);
           router.push(`#${entry.target.id}`, {
