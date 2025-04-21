@@ -7,7 +7,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import SectionCard from './SectionCard';
-import { ExperienceData } from '../lib/schema';
+import { ExperienceType } from '../lib/schema';
 import data from '../../public/data.json';
 import { CgWorkAlt } from 'react-icons/cg';
 
@@ -25,7 +25,7 @@ export default function Experience({
     >
       <SectionCard title='Experience'>
         <VerticalTimeline layout='1-column-left'>
-          {data?.experienceData.map((job: ExperienceData, index: number) => (
+          {data?.experienceData.map((job: ExperienceType, index: number) => (
             <VerticalTimelineElement
               visible={true}
               date={job.date}
@@ -34,7 +34,7 @@ export default function Experience({
               contentStyle={{
                 color: 'black',
                 background: 'rgb(241 245 249)',
-                borderBottom: '4px solid black',
+                borderRadius: '10px',
               }}
               icon={React.createElement(CgWorkAlt)}
               iconStyle={{ background: 'black', color: 'white' }}
@@ -46,8 +46,6 @@ export default function Experience({
                 {job.jobTitle} - {job.location}
               </h4>
               <p className='text-left mt-2'>{job.description}</p>
-              {/* <p>{job.tools.toString()}</p> */}
-              {/* TODO: make a tag component and add here */}
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

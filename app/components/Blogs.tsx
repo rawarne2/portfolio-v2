@@ -4,7 +4,7 @@ import React from 'react';
 import SectionCard from './SectionCard';
 import { SocialIcon } from 'react-social-icons';
 import data from '../../public/data.json';
-import { BlogsData } from '../lib/schema';
+import { BlogType } from '../lib/schema';
 
 export const Blogs = ({
   sectionRef,
@@ -15,7 +15,7 @@ export const Blogs = ({
     <div key={'blogs'} id={'blogs'} ref={sectionRef} className='section pt-6'>
       <SectionCard title='Blogs'>
         <div>
-          {data?.blogsData.map((blog: BlogsData) => (
+          {data?.blogsData.map((blog: BlogType) => (
             <div
               className='m-4 rounded-md p-8 bg-slate-100 text-black border-b-4 border-black'
               key={blog.id}

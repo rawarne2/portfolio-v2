@@ -1,7 +1,6 @@
 import { z } from 'zod';
 import { StaticImageData } from 'next/image';
 
-// No validation necessary for these schemas as they're just type definitions
 export const ProjectSchema = z.object({
     id: z.number(),
     title: z.string(),
@@ -40,13 +39,13 @@ export const SectionSchema = z.object({
 });
 
 // Derive TypeScript types from Zod schemas
-export type Project = z.infer<typeof ProjectSchema>;
-export type ExperienceData = z.infer<typeof ExperienceSchema>;
-export type BlogsData = z.infer<typeof BlogSchema>;
-export type Section = z.infer<typeof SectionSchema>;
+export type ProjectType = z.infer<typeof ProjectSchema>;
+export type ExperienceType = z.infer<typeof ExperienceSchema>;
+export type BlogType = z.infer<typeof BlogSchema>;
+export type SectionType = z.infer<typeof SectionSchema>;
 
 // Re-export the sections array
-export const sections: Section[] = [
+export const sections: SectionType[] = [
     { id: 'about-me', title: 'About Me' },
     { id: 'skills', title: 'My Skills' },
     { id: 'experience', title: 'Experience' },

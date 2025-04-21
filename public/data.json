@@ -132,7 +132,7 @@
       "title": "Property Management System",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["Angular", "Node.js", "Express"],
-      "github": ["https://github.com"],
+      "github": ["https://github.com/example1", "https://github.com/example2"],
       "image": "https://picsum.photos/400/400",
       "link": "https://example.com"
     },
@@ -141,7 +141,7 @@
       "title": "Sports Stats Search",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["React", "Redux","Node.js", "Express"],
-      "github": ["https://github.com"],
+      "github": ["https://github.com/example3"],
       "image": "https://picsum.photos/400/400",
       "link": "https://example.com"
     }

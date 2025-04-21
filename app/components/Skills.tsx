@@ -82,15 +82,6 @@ export default function Skills({
 }) {
   const [activeCategory, setActiveCategory] = useState('Frontend Development');
 
-  // Verify all skills from data.json are included in categories
-  const allCategorizedSkills = Object.values(SKILL_CATEGORIES).flat();
-  const missingSkills = data.skillsData.filter(
-    (skill) => !allCategorizedSkills.includes(skill)
-  );
-  if (missingSkills.length > 0) {
-    console.warn('Missing skills in categories:', missingSkills);
-  }
-
   return (
     <div key={'skills'} id={'skills'} ref={sectionRef} className='section pt-6'>
       <SectionCard title='My Skills'>

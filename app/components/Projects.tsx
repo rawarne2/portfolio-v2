@@ -2,7 +2,7 @@
 
 import React, { MutableRefObject } from 'react';
 import SectionCard from './SectionCard';
-import { Project } from '../lib/schema';
+import { ProjectType } from '../lib/schema';
 import data from '../../public/data.json';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
@@ -21,7 +21,7 @@ export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
       className='section pt-6'
     >
       <SectionCard title='Projects'>
-        {data?.projectsData.map((project: Project) => (
+        {data?.projectsData.map((project: ProjectType) => (
           <div
             key={project.id}
             className='flex flex-col md:flex-row m-4 rounded-md p-8 justify-between bg-slate-100 text-black border-b-4 border-black'
@@ -35,7 +35,7 @@ export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
                 {project?.technologies.map((item, i) => (
                   <li
                     key={i}
-                    className='p-2 m-1 active rounded-md border-[0.15rem] max-w-fit'
+                    className='px-2 py-1 m-1 active rounded-md border-b-2 border-black max-w-fit'
                   >
                     {item}
                   </li>

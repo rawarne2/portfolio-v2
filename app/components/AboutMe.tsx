@@ -43,7 +43,7 @@ export default function AboutMe({
                 <button
                   onClick={() =>
                     window.open(
-                      'https://www.linkedin.com',
+                      'https://www.linkedin.com/in/example',
                       '_blank'
                     )
                   }
@@ -52,35 +52,35 @@ export default function AboutMe({
                   {'LinkedIn'}
                   <SocialIcon
                     className='rounded-full ml-2'
-                    url='https://www.linkedin.com'
+                    url='https://www.linkedin.com/in/example'
                     title='linkedin'
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
                 <button
                   onClick={() =>
-                    window.open('https://github.com', '_blank')
+                    window.open('https://github.com/example', '_blank')
                   }
                   className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
                 >
                   {'GitHub'}
                   <SocialIcon
                     className='rounded-full ml-2'
-                    url='https://github.com'
+                    url='https://github.com/example'
                     title='github'
                     style={{ height: 36, width: 36 }}
                   />
                 </button>
                 <button
                   onClick={() =>
-                    window.open('https://medium.com', '_blank')
+                    window.open('https://medium.com/example', '_blank')
                   }
                   className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
                 >
                   {'Medium'}
                   <SocialIcon
                     className='rounded-full ml-2'
-                    url='https://medium.com'
+                    url='https://medium.com/example'
                     title='medium'
                     style={{ height: 36, width: 36 }}
                   />
@@ -88,7 +88,7 @@ export default function AboutMe({
                 <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2'>
                   <a
                     download={'Resume.pdf'}
-                    href='https://www.google.com'
+                    href='https://www.example.com/resume.pdf'
                     className='ml-2 flex items-center justify-center'
                     target='_blank'
                   >
