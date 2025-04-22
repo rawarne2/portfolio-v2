@@ -11,6 +11,9 @@ export default function AboutMe({
 }: {
   sectionRef: React.RefObject<HTMLDivElement>;
 }) {
+  // Destructure URLs from data.json
+  const { urls } = data;
+  
   return (
     <div
       key={'about-me'}
@@ -40,55 +43,52 @@ export default function AboutMe({
             <div className='text-center'>
               <h2 className='text-l font-medium'>Connect With Me!</h2>
               <div className='flex flex-wrap justify-center'>
-                <button
-                  onClick={() =>
-                    window.open(
-                      'https://www.linkedin.com/in/example',
-                      '_blank'
-                    )
-                  }
-                  className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
-                >
-                  {'LinkedIn'}
-                  <SocialIcon
-                    className='rounded-full ml-2'
-                    url='https://www.linkedin.com/in/example'
-                    title='linkedin'
-                    style={{ height: 36, width: 36 }}
-                  />
-                </button>
-                <button
-                  onClick={() =>
-                    window.open('https://github.com/example', '_blank')
-                  }
-                  className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
-                >
-                  {'GitHub'}
-                  <SocialIcon
-                    className='rounded-full ml-2'
-                    url='https://github.com/example'
-                    title='github'
-                    style={{ height: 36, width: 36 }}
-                  />
-                </button>
-                <button
-                  onClick={() =>
-                    window.open('https://medium.com/example', '_blank')
-                  }
-                  className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
-                >
-                  {'Medium'}
-                  <SocialIcon
-                    className='rounded-full ml-2'
-                    url='https://medium.com/example'
-                    title='medium'
-                    style={{ height: 36, width: 36 }}
-                  />
-                </button>
+                {urls.linkedin && (
+                  <button
+                    onClick={() => window.open(urls.linkedin, '_blank')}
+                    className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
+                  >
+                    {'LinkedIn'}
+                    <SocialIcon
+                      className='rounded-full ml-2'
+                      url={urls.linkedin}
+                      title='linkedin'
+                      style={{ height: 36, width: 36 }}
+                    />
+                  </button>
+                )}
+                {urls.github && (
+                  <button
+                    onClick={() => window.open(urls.github, '_blank')}
+                    className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
+                  >
+                    {'GitHub'}
+                    <SocialIcon
+                      className='rounded-full ml-2'
+                      url={urls.github}
+                      title='github'
+                      style={{ height: 36, width: 36 }}
+                    />
+                  </button>
+                )}
+                {urls.medium && (
+                  <button
+                    onClick={() => window.open(urls.medium, '_blank')}
+                    className='active hover:bg-blue-700 font-medium rounded m-1 p-2 flex items-center justify-center'
+                  >
+                    {'Medium'}
+                    <SocialIcon
+                      className='rounded-full ml-2'
+                      url={urls.medium}
+                      title='medium'
+                      style={{ height: 36, width: 36 }}
+                    />
+                  </button>
+                )}
                 <button className='active hover:bg-blue-700 font-medium rounded m-1 p-2'>
                   <a
                     download={'Resume.pdf'}
-                    href='https://www.example.com/resume.pdf'
+                    href={'/Resume.pdf'}
                     className='ml-2 flex items-center justify-center'
                     target='_blank'
                   >

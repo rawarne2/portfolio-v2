@@ -3,11 +3,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { sections } from '../lib/schema';
+import rawData from '../../public/data.json';
 
 const Header: React.FC<{
   handleHeaderClick: (sectionId: string) => void;
   activeSection: string | null;
 }> = ({ handleHeaderClick, activeSection }) => {
+  // Get the name from data.json
+  const portfolioName = rawData.name || 'Firstname Lastname';
+  
   return (
     <header className='mt-24' id='header'>
       <nav>
@@ -34,7 +38,7 @@ const Header: React.FC<{
         ))}
       </nav>
       <h1 className='text-3xl font-medium capitalize text-center'>
-        Firstname Lastname&apos;s Portfolio
+        {portfolioName}&apos;s Portfolio
       </h1>
     </header>
   );

@@ -1,4 +1,10 @@
 {
+  "name": "Firstname Lastname",
+  "urls": {
+    "github": "https://github.com/example-profile",
+    "linkedin": "https://www.linkedin.com/in/example-profile/",
+    "medium": "https://medium.com/example-profile"
+  },
   "aboutMeData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
   "experienceData": [
     {
@@ -112,8 +118,8 @@
         "Django Testing Framework"
       ],
       "github": [
-        "https://github.com",
-        "https://github.com"
+        "https://github.com/example-profile/project1",
+        "https://github.com/example-profile/project1-api"
       ],
       "image": "https://picsum.photos/400/400",
       "link": "https://example.com/video.mp4"
@@ -123,7 +129,7 @@
       "title": "Food n Stuff",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["React Native", "Node.js", "Express", "Postgres"],
-      "github": ["https://github.com"],
+      "github": ["https://github.com/example-profile/food-n-stuff"],
       "image": "https://picsum.photos/400/400",
       "link": "https://example.com/video.mp4"
     },
@@ -132,7 +138,7 @@
       "title": "Property Management System",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["Angular", "Node.js", "Express"],
-      "github": ["https://github.com/example1", "https://github.com/example2"],
+      "github": ["https://github.com/example-profile/property-management", "https://github.com/example-profile/property-api"],
       "image": "https://picsum.photos/400/400",
       "link": "https://example.com"
     },
@@ -141,7 +147,7 @@
       "title": "Sports Stats Search",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "technologies": ["React", "Redux","Node.js", "Express"],
-      "github": ["https://github.com/example3"],
+      "github": ["https://github.com/example-profile/sports-stats"],
       "image": "https://picsum.photos/400/400",
       "link": "https://example.com"
     }
@@ -152,61 +158,42 @@
       "title": "New JavaScript Features from ECMAScript 2023 (ES14)",
       "image": "https://picsum.photos/400/400",
       "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "https://example.com/blog1"
+      "url": "https://medium.com/example-profile/js-features-2023"
     },
     {
       "id": 2,
       "title": "Are You Accidentally Rounding Numbers in JavaScript???",
       "image": "https://picsum.photos/400/400",
       "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "https://example.com/blog2"
+      "url": "https://medium.com/example-profile/js-rounding-issues"
     },
     {
       "id": 3,
       "title": "New ES8 Features",
       "image": "https://picsum.photos/400/400",
       "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqu aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "https://example.com/blog3"
+      "url": "https://medium.com/example-profile/es8-features"
     }
   ],
-  "skillsData": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Java",
-    "React",
-    "React Native",
-    "Next.js",
-    "Angular",
-    "Redux",
-    "Django",
-    "Express",
-    "Node.js",
-    "MongoDB",
-    "PostgreSQL",
-    "SQL",
-    "NoSQL",
-    "REST",
-    "GraphQL",
-    "AWS",
-    "Unit Testing",
-    "Integration Testing",
-    "End-to-End Testing",
-    "Jest",
-    "Cypress",
-    "React Testing Library",
-    "React Native Testing Library",
-    "pytest",
-    "pytest-django",
-    "Data Structures",
-    "Algorithms",
-    "Authentication",
-    "CI/CD",
-    "Docker",
-    "Agile",
-    "Git",
-    "Code Reviews"
-  ]
+  "skillsData": {
+    "Frontend Development": [
+      "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "React Native",
+      "Next.js", "Angular", "Redux", "Tailwind CSS", "Bootstrap", "Material UI",
+      "Ant Design", "SASS", "LESS", "Accessibility", "SEO", "Performance Optimization"
+    ],
+    "Backend Development": [
+      "Python", "Java", "Django", "Express.js", "Node.js", "MongoDB", "PostgreSQL",
+      "SQL", "NoSQL", "RESTful APIs", "GraphQL", "Authentication", "Authorization",
+      "OAuth", "JWT", "RabbitMQ", "Microservices", "Serverless (AWS Lambda)"
+    ],
+    "DevOps & Testing": [
+      "AWS", "Unit Testing", "Integration Testing", "End-to-End Testing", "Jest",
+      "Cypress", "React Testing Library", "React Native Testing Library", "pytest",
+      "pytest-django", "CI/CD", "Docker"
+    ],
+    "Core Skills": [
+      "Data Structures", "Algorithms", "Authentication", "Agile", "Git", "Code Reviews",
+      "Problem Solving", "Debugging", "Clean code", "Adaptability", "SOLID/DRY"
+    ]
+  }
 }

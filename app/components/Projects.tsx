@@ -3,7 +3,7 @@
 import React, { MutableRefObject } from 'react';
 import SectionCard from './SectionCard';
 import { ProjectType } from '../lib/schema';
-import data from '../../public/data.json';
+import { validatedData } from '../lib/data'; // Import validated data
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -13,6 +13,9 @@ export interface ProjectProps {
   sectionRef: React.RefObject<HTMLDivElement>;
 }
 export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
+  // Use validated projects data
+  const projects = validatedData.projectsData;
+
   return (
     <div
       key={'projects'}
@@ -21,7 +24,7 @@ export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
       className='section pt-6'
     >
       <SectionCard title='Projects'>
-        {data?.projectsData.map((project: ProjectType) => (
+        {projects.map((project: ProjectType) => (
           <div
             key={project.id}
             className='flex flex-col md:flex-row m-4 rounded-md p-8 justify-between bg-slate-100 text-black border-b-4 border-black'
@@ -47,7 +50,7 @@ export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
                 <Image
                   unoptimized={true}
                   src={project.image}
-                  alt='Firstname Lastname'
+                  alt={project.title}
                   className='h-full w-full rounded-md object-cover mb-4'
                   width={500}
                   height={500}

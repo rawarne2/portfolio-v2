@@ -1,12 +1,16 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './styles/globals.css';
+import rawData from '../public/data.json';
 
 const inter = Inter({ subsets: ['latin'] });
 
+// Get the name from data.json
+const portfolioName = rawData.name || 'Firstname Lastname';
+
 export const metadata: Metadata = {
-  title: 'Firstname Lastname',
-  description: "Firstname Lastname's Portfolio Website",
+  title: portfolioName,
+  description: `${portfolioName}'s Portfolio Website`,
   icons: {
     icon: '/next.svg',
   },

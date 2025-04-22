@@ -2,78 +2,10 @@
 
 import React, { useState } from 'react';
 import SectionCard from './SectionCard';
-import data from '../../public/data.json';
+import { validatedData } from '../lib/data';
 
-// Categories and their skills
-const SKILL_CATEGORIES = {
-  'Frontend Development': [
-    'HTML5',
-    'CSS3',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'React Native',
-    'Next.js',
-    'Angular',
-    'Redux',
-    'Tailwind CSS',
-    'Bootstrap',
-    'Material UI',
-    'Ant Design',
-    'SASS',
-    'LESS',
-    'Accessibility',
-    'SEO',
-    'Performance Optimization',
-  ],
-  'Backend Development': [
-    'Python',
-    'Java',
-    'Django',
-    'Express.js',
-    'Node.js',
-    'MongoDB',
-    'PostgreSQL',
-    'SQL',
-    'NoSQL',
-    'RESTful APIs',
-    'GraphQL',
-    'Authentication',
-    'Authorization',
-    'OAuth',
-    'JWT',
-    'RabbitMQ',
-    'Microservices',
-    'Serverless (AWS Lambda)',
-  ],
-  'DevOps & Testing': [
-    'AWS',
-    'Unit Testing',
-    'Integration Testing',
-    'End-to-End Testing',
-    'Jest',
-    'Cypress',
-    'React Testing Library',
-    'React Native Testing Library',
-    'pytest',
-    'pytest-django',
-    'CI/CD',
-    'Docker',
-  ],
-  'Core Skills': [
-    'Data Structures',
-    'Algorithms',
-    'Authentication',
-    'Agile',
-    'Git',
-    'Code Reviews',
-    'Problem Solving',
-    'Debugging',
-    'Clean code',
-    'Adaptability',
-    'SOLID/DRY',
-  ],
-};
+// Use validated skills data
+const SKILL_CATEGORIES = validatedData.skillsData;
 
 export default function Skills({
   sectionRef,
