@@ -21,7 +21,7 @@ export default function Experience({
       key={'experience'}
       id={'experience'}
       ref={sectionRef}
-      className='section pt-6'
+      className='section pt-6 scroll-mt-16'
     >
       <SectionCard title='Experience'>
         <VerticalTimeline layout='1-column-left'>
@@ -35,14 +35,19 @@ export default function Experience({
                 color: 'black',
                 background: 'rgb(241 245 249)',
                 borderRadius: '10px',
+                padding: '2rem',
+                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.25)',
+                transition: 'all 0.3s ease',
+              }}
+              contentArrowStyle={{
+                borderRight: '7px solid rgb(241 245 249)',
+                transition: 'all 0.3s ease',
               }}
               icon={React.createElement(CgWorkAlt)}
-              iconStyle={{ background: 'black', color: 'white' }}
+              iconStyle={{ background: 'black', color: 'white', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3)' }}
             >
-              <strong>
-                <h2>{job.company}</h2>
-              </strong>
-              <h4>
+              <h3 className='text-lg font-semibold'>{job.company}</h3>
+              <h4 className='text-lg font-medium'>
                 {job.jobTitle} - {job.location}
               </h4>
               <p className='text-left mt-2'>{job.description}</p>

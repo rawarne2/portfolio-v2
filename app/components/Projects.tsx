@@ -1,13 +1,11 @@
 'use client';
-
-import React, { MutableRefObject } from 'react';
+import React from 'react';
 import SectionCard from './SectionCard';
 import { ProjectType } from '../lib/schema';
-import { validatedData } from '../lib/data'; // Import validated data
+import { validatedData } from '../lib/data';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import Link from 'next/link';
 
 export interface ProjectProps {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -16,84 +14,176 @@ export const Projects: React.FC<ProjectProps> = ({ sectionRef }) => {
   // Use validated projects data
   const projects = validatedData.projectsData;
 
+  // First 5 projects are featured, rest are other projects
+
   return (
     <div
       key={'projects'}
       id={'projects'}
+      className='section pt-6 scroll-mt-16'
       ref={sectionRef}
-      className='section pt-6'
     >
       <SectionCard title='Projects'>
-        {projects.map((project: ProjectType) => (
+        {/* Featured Projects */}
+        {projects.slice(0, 5).map((project: ProjectType) => (
           <div
             key={project.id}
-            className='flex flex-col md:flex-row m-4 rounded-md p-8 justify-between bg-slate-100 text-black border-b-4 border-black'
+            className='bg-slate-100 text-black rounded-lg shadow-md shadow-black/50 border-b-4 border-black p-8 mb-4 md:mb-8 transition-all duration-300 hover:shadow-lg hover:shadow-black/60'
           >
-            <div className='flex-col md:flex-[2.5]'>
-              <span className='flex flex-row items-center mb-2 justify-between'>
-                <h3 className='text-wrap text-xl font-bold'>{project.title}</h3>
-              </span>
-              <p>{project.description}</p>
-              <ul className='flex flex-wrap mt-2'>
-                {project?.technologies.map((item, i) => (
-                  <li
-                    key={i}
-                    className='px-2 py-1 m-1 active rounded-md border-b-2 border-black max-w-fit'
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {project.image && (
-              <div className='mt-4 md:mt-0 md:flex-1 md:ml-4 flex flex-col'>
-                <Image
-                  unoptimized={true}
-                  src={project.image}
-                  alt={project.title}
-                  className='h-full w-full rounded-md object-cover mb-4'
-                  width={500}
-                  height={500}
-                />
-                <span className='flex flex-row items-center justify-center'>
-                  {project.github.map((item, i) => (
-                    <button
-                      className='p-2 m-1 active rounded-md flex items-center justify-center hover:bg-blue-700'
-                      key={item}
-                      onClick={() => window.open(item, '_blank')}
-                    >
-                      {'Github'}
-                      <SocialIcon
-                        className='rounded-full ml-2'
-                        url={item}
-                        title='github'
-                        style={{ height: 32, width: 32 }}
-                        bgColor='black'
-                      />
-                    </button>
-                  ))}
+            <div className="flex flex-col">
+              <div className="flex justify-between items-center mb-3">
+                <h3 className='text-lg font-semibold'>{project.title}</h3>
+                <div className='flex gap-2'>
+                  <div className='flex flex-col sm:flex-row gap-2'>
+                    {project.github.map((item, i) => (
+                      <button
+                        className='px-3 py-1 bg-gray-800 text-white rounded-md flex items-center hover:bg-gray-700 transition-all duration-200 hover:shadow-md hover:shadow-black/60'
+                        key={item}
+                        onClick={() => window.open(item, '_blank')}
+                      >
+                        Github
+                        <SocialIcon
+                          url={item}
+                          style={{ height: 20, width: 20, marginLeft: 4 }}
+                          bgColor='white'
+                          fgColor='black'
+                        />
+                      </button>
+                    ))}
+                  </div>
                   {project.link && (
                     <button
                       onClick={() => window.open(project.link, '_blank')}
-                      className='p-3 m-1 active rounded-md flex hover:bg-blue-700 items-center justify-center'
+                      className='px-3 py-1 h-full bg-blue-600 text-white rounded-md flex items-center hover:bg-blue-700 transition-all duration-200 hover:shadow-md hover:shadow-black/60'
                     >
-                      {'View'}
-                      <Link
-                        href={project.link}
-                        target='_blank'
-                        as={project.link}
-                        className='ml-2'
-                      >
-                        <FaExternalLinkAlt style={{ height: 20, width: 20 }} />
-                      </Link>
+                      View
+                      <FaExternalLinkAlt style={{ marginLeft: 6, height: 12, width: 12 }} />
                     </button>
                   )}
-                </span>
+                </div>
               </div>
-            )}
+              <p className='text-gray-700 mb-4'>{project.description}</p>
+
+              {project.images.length > 0 && (
+                <div className='w-full items-center flex flex-col sm:flex-row justify-around py-4'>
+                  {project.images.slice(0, 3).map((img, index) => (
+                    <div
+                      key={index}
+                      className='relative aspect-[4/5] min-h-20 h-80 rounded-md max-w-56 overflow-hidden mx-8 sm:mx-0 mb-6 md:mb-0 shadow-md shadow-black/50 transition-transform duration-300 hover:scale-[1.02]'
+                    >
+                      <Image
+                        unoptimized={true}
+                        src={img}
+                        alt={`${project.title} image ${index + 1}`}
+                        // className='object-cover'
+                        fill
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <div className="mb-4">
+                <h4 className="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-600">Technologies</h4>
+                <ul className='flex flex-wrap gap-1'>
+                  {project.technologies.map((item, i) => (
+                    <li
+                      key={i}
+                      className='px-2 py-1 bg-[rgb(53,78,142)] text-white rounded-md text-sm transition-all duration-200 hover:bg-[rgb(63,88,152)] hover:shadow-sm hover:shadow-black/40'
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         ))}
+
+        {/* Other Projects Section */}
+        <div className="mt-8">
+          <h3 className="text-xl font-semibold mb-6 text-center">More Projects</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {projects.slice(5).map((project: ProjectType) => (
+              <div
+                key={project.id}
+                className='bg-slate-100 text-black rounded-xl shadow-xl shadow-black/50 border-b-4 border-black h-full transition-all duration-300 hover:shadow-2xl hover:shadow-black/70 hover:translate-y-[-2px]'
+              >
+                {project.images.length > 0 && (
+                  <div className="relative h-48 w-full">
+                    <Image
+                      unoptimized={true}
+                      src={project.images[0]}
+                      alt={project.title}
+                      className='object-cover rounded-t-lg'
+                      fill
+                    />
+                  </div>
+                )}
+
+                <div className="p-5 flex-grow">
+                  <div className="flex justify-between items-center mb-3">
+                    <h4 className='text-lg font-semibold'>{project.title}</h4>
+                    <div className='flex gap-2'>
+                      {project.github.map((item, i) => (
+                        <button
+                          className='px-2 py-1 bg-gray-800 text-white rounded-md flex items-center text-xs hover:bg-gray-700 transition-all duration-200 hover:shadow-md hover:shadow-black/60'
+                          key={item}
+                          onClick={() => window.open(item, '_blank')}
+                        >
+                          <SocialIcon
+                            url={item}
+                            style={{ height: 16, width: 16 }}
+                            bgColor='white'
+                            fgColor='black'
+                          />
+                        </button>
+                      ))}
+                      {project.link && (
+                        <button
+                          onClick={() => window.open(project.link, '_blank')}
+                          className='px-2 py-1 bg-blue-600 text-white rounded-md flex items-center text-xs hover:bg-blue-700 transition-all duration-200 hover:shadow-md hover:shadow-black/60'
+                        >
+                          <FaExternalLinkAlt style={{ height: 10, width: 10 }} />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                  <p className='text-gray-700 mb-4'>{project.description}</p>
+
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold uppercase tracking-wider mb-2 text-gray-600">Technologies</h4>
+                    <ul className='flex flex-wrap gap-1'>
+                      {project.technologies.map((item, i) => (
+                        <li
+                          key={i}
+                          className='px-2 py-1 bg-[rgb(53,78,142)] text-white rounded-md text-sm transition-all duration-200 hover:bg-[rgb(63,88,152)] hover:shadow-sm hover:shadow-black/40'
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </SectionCard>
     </div>
   );
 };
+
+/*
+projects: 
+Featured: 
+  - Top 5 Dating Apps
+  - Preferences Game
+  - Dynasty Dashboard
+  - NutriYum
+  - Memory Game
+-Other Projects
+  - LCA Properties
+  - NBA Stats Search
+*/

@@ -22,9 +22,8 @@ export default function Home() {
   );
   const router = useRouter();
 
-  // always start at about-me section
   useEffect(() => {
-    // start at about-me section
+    // always start at about-me section
     router.push('#about-me', {
       scroll: false,
     });
@@ -33,12 +32,11 @@ export default function Home() {
       behavior: 'instant',
     });
 
-    // observer for active section
+    // observer for active section in header
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return;
 
-        // set active section if it is not already active and the section is in the viewport
         if (entry.isIntersecting && entry.target.id !== activeSection) {
           setActiveSection(entry.target.id);
           router.push(`#${entry.target.id}`, {
@@ -51,7 +49,7 @@ export default function Home() {
           });
         }
       },
-      { threshold: [0.4], rootMargin: '80px 0px 0px 0px' }
+      { threshold: [0.1, 0.9] }
     );
     for (const section of Object.values(sectionRefs.current)) {
       observer.observe(section?.current as HTMLDivElement);
@@ -74,16 +72,16 @@ export default function Home() {
   };
 
   return (
-    <main className='flex flex-col items-center'>
+    <main className='flex flex-col items-center max-w-screen-lg mx-auto mt-16 md:mt-20'>
       <Header
         handleHeaderClick={handleHeaderClick}
         activeSection={activeSection}
       />
       <AboutMe sectionRef={sectionRefs.current['about-me']} />
-      <Skills sectionRef={sectionRefs.current['skills']} />
-      <Experience sectionRef={sectionRefs.current['experience']} />
       <Projects sectionRef={sectionRefs.current['projects']} />
+      <Experience sectionRef={sectionRefs.current['experience']} />
       <Blogs sectionRef={sectionRefs.current['blogs']} />
+      <Skills sectionRef={sectionRefs.current['skills']} />
       <Footer />
     </main>
   );
