@@ -1,199 +1,280 @@
 {
-  "name": "Firstname Lastname",
-  "urls": {
-    "github": "https://github.com/example-profile",
-    "linkedin": "https://www.linkedin.com/in/example-profile/",
-    "medium": "https://medium.com/example-profile"
-  },
-  "aboutMeData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-  "experienceData": [
-    {
-      "id": 1,
-      "company": "TechCorp Solutions",
-      "jobTitle": "AI Model Trainer",
-      "location": "New York, NY / Remote",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "date": "2024 — Present",
-      "tools": [
-        "Python",
-        "JavaScript",
-        "TypeScript",
-        "SQL",
-        "Django",
-        "NumPy",
-        "Pandas"
-      ]
+    "name": "Rashaun Warner",
+    "urls": {
+        "github": "https://github.com/rawarne2",
+        "linkedin": "https://www.linkedin.com/in/rashaun-warner/",
+        "medium": "https://medium.com/@Rashaunwarner",
+        "profilePic": "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/profile-pic.jpg",
+        "resume": "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/rashaun-warner-resume.pdf"
     },
-    {
-      "id": 2,
-      "company": "CodeMentor Inc",
-      "jobTitle": "Software Engineer and Mentor",
-      "location": "San Francisco, CA / Remote",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "date": "2023 — Present",
-      "tools": [
-        "React",
-        "React Native",
-        "TypeScript",
-        "JavaScript",
-        "Data Structures",
-        "Algorithms"
-      ]
-    },
-    {
-      "id": 3,
-      "company": "TechFitness Solutions",
-      "jobTitle": "Software Engineer",
-      "location": "Chicago, IL / Remote",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "date": "2020 — 2022",
-      "tools": [
-        "React",
-        "Node.js",
-        "Express",
-        "Postgres",
-        "TypeScript",
-        "AWS (Lambda, S3, CloudWatch)",
-        "React Query",
-        "Redux"
-      ]
-    },
-    {
-      "id": 4,
-      "company": "VisionTech Solutions",
-      "jobTitle": "Full Stack Web Developer",
-      "location": "Boston, MA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "date": "2019 — 2020",
-      "tools": [
-        "React",
-        "Redux",
-        "JavaScript",
-        "TypeScript",
-        "GraphQL",
-        "Node.js",
-        "Postgres",
-        "Python",
-        "Tornado",
-        "Django",
-        "Server Management",
-        "Deployments"
-      ]
-    },
-    {
-      "id": 5,
-      "company": "DataTech Solutions",
-      "jobTitle": "Developer Apprentice",
-      "location": "Seattle, WA",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "date": "2018 — 2019",
-      "tools": [
-        "Angular",
-        "Spring Boot",
-        "TypeScript",
-        "Java",
-        "Algorithms",
-        "OracleDB",
-        "RabbitMQ",
-        "Agile"
-      ]
-    }
-  ],
-  "projectsData": [
-    {
-      "id": 1,
-      "title": "Dating App",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "technologies": [
-        "TypeScript",
-        "Python",
-        "React Native",
-        "Django",
-        "Django Rest Framework",
-        "PostgreSQL",
-        "Expo",
-        "AWS S3",
-        "React Testing Library",
-        "Jest",
-        "Django Testing Framework"
+    "aboutMeData": ["Hello World! I'm a Full-Stack Developer with a frontend focus and a passion for creating fast, scalable web and mobile apps using React, React Native, and Next.js. I'm an expert in JavaScript, TypeScript, and Python, with experience using backend frameworks like Express.js and Django, as well as various AWS services. I transitioned from a career in health and fitness to software development after teaching myself to code, then graduating from Fullstack Academy's Software Engineering Immersive Bootcamp, which taught me full-stack JavaScript using React and Express.js.", 
+    "I started my tech career as a Software Engineer Apprentice at 84.51° with a mentor from Launch Scout, where I learned Java, Angular, and TypeScript, while working on Kroger's precision marketing platform. At Kinetic Vision, I led React and Python-based full-stack projects and managed co-ops, and at iFIT, I contributed to a mobile and embedded app with 6+ million users utilizing React, Node.js, and AWS developing new features, optimizing performance, and fixing critical bugs. Currently, I work as a Software Developer - AI Trainer at DataAnnotation.tech, designing prompts, write and test code, and evaluate AI-generated responses to help improve the quality and accuracy of coding models."],
+    "experienceData": [
+      {
+        "id": 1,
+        "company": "DataAnnotations / Outlier.ai",
+        "jobTitle": "Software Developer - AI Trainer",
+        "location": "Cincinnati, OH / Remote",
+        "description": "I train AI models by evaluating the quality of their responses and refining them to meet ideal standards. This involves analyzing model outputs for correctness, clarity, verbosity, formatting, and alignment with prompt instructions. I also provide detailed feedback and make precise edits to both text and code to enhance performance. My role spans a variety of projects, but the core workflow remains consistent: creating or reviewing prompts, assessing AI-generated responses, and ensuring they adhere to standards of correctness, verbosity, formatting, alignment with instructions, and more.",
+        "date": "2024 — Present",
+        "tools": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "SQL",
+          "React",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "Django",
+          "NumPy",
+          "Pandas"
+        ]
+      },
+      {
+        "id": 2,
+        "company": "Codementor.io",
+        "jobTitle": "Software Engineer and Mentor",
+        "location": "Cincinnati, OH / Remote",
+        "description": "Clients schedule mentoring sessions with me for expert guidance in software development. Provide code reviews, write code for various projects, and debug issues.",
+        "date": "2023 — Present",
+        "tools": [
+          "TypeScript",
+          "JavaScript",
+          "Python",
+          "React",
+          "Data Structures",
+          "Algorithms",
+          "AWS",
+          "Web Development"
+        ]
+      },
+      {
+        "id": 3,
+        "company": "iFIT",
+        "jobTitle": "Software Engineer",
+        "location": "Cincinnati, OH / Remote",
+        "description": "iFIT is a consumer facing application with around 6 million users globally. I have created new features, fixed bugs, tested features, monitored errors, refactored code, and implemented microservices to create Webviews that are displayed in mobile devices and embedded fitness machines. We used TypeScript, AWS, Lambda Serverless, S3, REST, React, Redux, and Node. Worked on high visibility sections of the app, such as the home screen, pre and post workout screens. Collaborated with other teams and helped teammates learn different repos that I had the most experience on.",
+        "date": "2020 — 2022",
+        "tools": [
+          "React",
+          "Node.js",
+          "Express.js",
+          "Postgres",
+          "TypeScript",
+          "AWS Lambda",
+          "AWS S3",
+          "React Query",
+          "Redux",
+          "AWS CloudWatch",
+          "AWS API Gateway"
+        ]
+      },
+      {
+        "id": 4,
+        "company": "Kinetic Vision",
+        "jobTitle": "Full Stack Web Developer",
+        "location": "Cincinnati, OH",
+        "description": "After my apprenticeship, I worked as a Fullstack Web Developer at Kinetic Vision for 13 months. I started off working closely with and learning from the lead developer, and eventually began leading my own projects with co-ops. At this company, I help plan and develop projects from beginning to end. This includes scoping, estimates, feature design, development, bug fixes, code reviews, documentation, and deployment. I also meet with clients to review features and discuss next steps. In addition, I helped mentor co-ops and other developers improve their skills and share knowledge about different projects.",
+        "date": "2019 — 2020",
+        "tools": [
+          "React",
+          "Redux",
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "RESTful APIs",
+          "GraphQL",
+          "Node.js",
+          "Tornado",
+          "Django",
+          "Flask",
+          "PostgreSQL",
+          "MongoDB",
+          "Server Management",
+          "Deployments",
+          "Docker",
+          "PyQt",
+          "MacOS",
+          "SQL",
+          "NoSQL",
+          "Linux",
+          "Windows",
+          "Agile",
+          "Git",
+          "Code Reviews",
+          "Mentoring"
+        ]
+      },
+      {
+        "id": 5,
+        "company": "84.51",
+        "jobTitle": "Developer Apprentice",
+        "location": "Cincinnati, OH",
+        "description": "After my bootcamp, I did an apprenticeship at 84.51 for about 7 months. I learned a variety of new skills on the job such as Java, Spring Boot, Angular to name a few. I was developing enterprise level, production code while pair programming or working solo. I had a mentor from a company called Launch Scout (formerly named Gaslight) who helped me get up to speed on new languages, frameworks, paradigms, best practices, and more so that I can begin my career on the right foot. The apprenticeship also included book clubs, algorithm challenges, and side projects.",
+        "date": "2018 — 2019",
+        "tools": [
+          "TypeScript",
+          "Java",
+          "Angular",
+          "Spring",
+          "Spring Boot",
+          "OracleDB",
+          "Data Structures",
+          "Algorithms",
+          "RabbitMQ",
+          "Agile",
+          "Git",
+          "Code Reviews"
+        ]
+      }
+    ],
+    "projectsData": [
+      {
+        "id": 1,
+        "title": "Top 5 Dating App",
+        "description": "Dating app that limits how many people a user can stay matched with at a time to encourage more quality communication. Please do not use or share this project idea in any way. This project is semi-active. Click 'View' to see a screen recording of the project so far.",
+        "technologies": [
+          "TypeScript",
+          "Python",
+          "React Native",
+          "Django",
+          "Django Rest Framework",
+          "PostgreSQL",
+          "Expo",
+          "AWS S3",
+          "React Testing Library",
+          "Jest",
+          "Django Testing Framework",
+          "Django Rest Framework Simple JWT"
+        ],
+        "github": [
+          "https://github.com/rawarne2/top-five-frontend",
+          "https://github.com/rawarne2/top-five-backend"
+        ],
+        "images": [
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/top5-1.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/top5-2.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/top5-3.png"
+        ],
+        "link": "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/top5-screen-recording.mp4"
+      },
+      {
+        "id": 5,
+        "title": "Preferences Game",
+        "description": "Preferences is a mobile-friendly, multiplayer party game played with a group of people on a single device or online with websockets. The goal is to achieve the highest score possible by accurately predicting the target player's preferences for a set of cards. Points are deducted depending on how far off your or your group's guess is to the target player's order of preferences. I came up with the rules and designed the game myself. The frontend was built with React and the backend was built with Node.js and Express.js for you to run locally. The production game is pointed at an AWS AppSync implementation. This project is actively in development.",
+        "technologies": ["React", "TypeScript", "Node.js", "Express.js", "Socket.io", "AWS Appsync", "TailwindCSS"],
+        "github": ["https://github.com/rawarne2/preferences-game"],
+        "images": [
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-1.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-2.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-3.png"
+        ],
+        "link": "https://rashaungames.com"
+      },
+      {
+        "id": 6,
+        "title": "Dynasty Dashboard",
+        "description": "This is a dashboard for my Sleeper dynasty football league. League data comes from the Sleeper public API, but since documentation is outdated, I reverse-engineered a few more API endpoints. Player rankings and values are web scraped from Keep Trade Cut using Python and BeautifulSoup. Data is cached to improve performance. This project is actively in development. Production deployment coming soon...",
+        "technologies": ["React", "TypeScript", "motion", "Material UI", "Python", "BeautifulSoup"],
+        "github": ["https://github.com/rawarne2/sleeper-dashboard"],
+        "images": [
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/dynasty-dashboard-1.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/dynasty-dashboard-2.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/dynasty-dashboard-3.png"
+        ],
+        "link": "https://www.rashaunwarner.com"
+      },
+      {
+        "id": 2,
+        "title": "NutriYum",
+        "description": "NutriYum is a mobile app built with React Native for iOS and Android. NutriYum keeps track of all the nutrients in what you eat so you don't have to, making your diet management as simple and easy as possible. You can take a picture of your food and the app will tell you the nutritional breakown and save it to your profile. You can also search for foods and add them as well. Track your progress and see how you're doing over time. All you have to do is snap what you eat then bon appétit!",
+        "technologies": ["React Native", "Redux", "JavaScript", "Node.js", "Express.js", "PostgreSQL", "AWS S3", "IBM Watson", "Docker"],
+        "github": ["https://github.com/NutriYum"],
+        "images": [
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/nutri-yum-1.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/nutri-yum-2.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/nutri-yum-3.png"
+        ],
+        "link": "https://s3.us-east-2.amazonaws.com/rashaunwarner.com/NutriYum.mp4"
+      },
+      {
+        "id": 7,
+        "title": "Memory Game",
+        "description": "A memory sequence game where players recall and replicate patterns on a grid. Choose from three difficulty levels (Easy, Medium, Hard), each with increasing grid sizes and complexity. The game reveals a sequence of squares, adding one new square each round, and players must click them in the correct order. One mistake ends the game, with scores based on rounds completed and time taken. Features include a single-use hint, smooth animations, and a leaderboard to track your top scores.",
+        "technologies": ["React", "Ant Design", "TypeScript", "motion"],
+        "github": ["https://github.com/rawarne2/memory-game"],
+        "images": [
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/memory-game-1.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/memory-game-2.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/memory-game-3.png"
+        ],
+        "link": "https://memory-game.vercel.app/"
+      },
+      {
+        "id": 3,
+        "title": "LCA Properties, LLC",
+        "description": "Angular and Express.js website displaying information about my mom's rental properties and provides maintenance request form submissions through email. Desktop and mobile friendly. No longer in use after sale of buildings.",
+        "technologies": ["Angular", "Node.js", "Express.js"],
+        "github": ["https://github.com/rawarne2/lca-properties"],
+        "images": ["https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/lca.png"],
+        "link": "http://www.lcaresidentialproperties.com/"
+      },
+      {
+        "id": 4,
+        "title": "NBA Stats Search",
+        "description": "This application allows users to search for the major stats of NBA players from the 2023-24 season. It is made using React and Redux. Updates are needed after API became unavailable. Temporarily using static data that was web scraped with Python.",
+        "technologies": ["React", "Redux","Node.js", "Express.js"],
+        "github": ["https://github.com/rawarne2/nba-stats"],
+        "images": ["https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/nba-stats.png"],
+        "link": "https://nba-stats-search.s3.us-east-2.amazonaws.com/index.html"
+      }
+    ],
+    "blogsData": [
+      {
+        "id": 1,
+        "title": "New JavaScript Features from ECMAScript 2023 (ES14)",
+        "image": "image",
+        "overview": "The 14th edition of ECMAScript was released in June 2023 and introduced several new features in JavaScript. It includes the array methods toReversed, toSorted, toSpliced, with, findLast, and findLastIndex, as well as hashbang comments support (#!) and the use of Symbols as key in weak collections.",
+        "url": "https://medium.com/@Rashaunwarner/new-javascript-features-from-ecmascript-2023-es14-b1c2247bd965"
+      },
+      {
+        "id": 2,
+        "title": "Are You Accidentally Rounding Numbers in JavaScript???",
+        "image": "image",
+        "overview": "Learn how BigInt is used with large numbers to prevent unintentionally rounding.",
+        "url": "https://medium.com/@Rashaunwarner/are-you-accidentally-rounding-numbers-in-javascript-c3b90cb04697"
+      },
+      {
+        "id": 3,
+        "title": "New ES8 Features",
+        "image": "image",
+        "overview": "ECMAScript 2017 (ES8) was finalized in June 2017. This article will go over some of the main features that can make your code cleaner and easier to write. This explains how to use new Object and String methods, trailing commas in function parameters, and Async functions.",
+        "url": "https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c"
+      }
+    ],
+    "skillsData": {
+      "Frontend Development": [
+        "HTML", "CSS", "JavaScript", "TypeScript", "React", "React Native",
+        "Next.js", "Angular", "Redux", "Bootstrap", "TailwindCSS", "Material UI",
+        "Ant Design", "Responsive Design", "UI/UX Design", "React Query", "React Router"
       ],
-      "github": [
-        "https://github.com/example-profile/project1",
-        "https://github.com/example-profile/project1-api"
+      "Backend Development": [
+        "Python", "Java", "Django", "Express.js", "Node.js", "MongoDB", "PostgreSQL",
+        "SQL", "NoSQL", "RESTful APIs", "GraphQL", "NumPy", "Pandas", "Django Rest Framework", 
+        "Flask", "Tornado"
       ],
-      "image": "https://picsum.photos/400/400",
-      "link": "https://example.com/video.mp4"
-    },
-    {
-      "id": 2,
-      "title": "Food n Stuff",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "technologies": ["React Native", "Node.js", "Express", "Postgres"],
-      "github": ["https://github.com/example-profile/food-n-stuff"],
-      "image": "https://picsum.photos/400/400",
-      "link": "https://example.com/video.mp4"
-    },
-    {
-      "id": 3,
-      "title": "Property Management System",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "technologies": ["Angular", "Node.js", "Express"],
-      "github": ["https://github.com/example-profile/property-management", "https://github.com/example-profile/property-api"],
-      "image": "https://picsum.photos/400/400",
-      "link": "https://example.com"
-    },
-    {
-      "id": 4,
-      "title": "Sports Stats Search",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "technologies": ["React", "Redux","Node.js", "Express"],
-      "github": ["https://github.com/example-profile/sports-stats"],
-      "image": "https://picsum.photos/400/400",
-      "link": "https://example.com"
+      "DevOps & Testing": [
+        "AWS", "Unit Testing", "Integration Testing", "End-to-End Testing", "Jest",
+        "Cypress", "React Testing Library", "React Native Testing Library", "pytest",
+        "pytest-django", "CI/CD", "Docker", "Jenkins", "Git", "Code Reviews", "AWS Lambda",
+        "AWS S3", "AWS CloudWatch", "AWS API Gateway", "AWS DynamoDB", "AWS Cognito", "AWS AppSync",
+        "AWS Lambda"
+      ],
+      "Core Skills": [
+        "Data Structures", "Algorithms", "Authentication", "Agile", "Scrum", "Git", "Code Reviews",
+        "Problem Solving", "Debugging", "Mentoring", "Teamwork", "Communication"
+      ]
     }
-  ],
-  "blogsData": [
-    {
-      "id": 1,
-      "title": "New JavaScript Features from ECMAScript 2023 (ES14)",
-      "image": "https://picsum.photos/400/400",
-      "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "https://medium.com/example-profile/js-features-2023"
-    },
-    {
-      "id": 2,
-      "title": "Are You Accidentally Rounding Numbers in JavaScript???",
-      "image": "https://picsum.photos/400/400",
-      "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "https://medium.com/example-profile/js-rounding-issues"
-    },
-    {
-      "id": 3,
-      "title": "New ES8 Features",
-      "image": "https://picsum.photos/400/400",
-      "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqu aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "https://medium.com/example-profile/es8-features"
-    }
-  ],
-  "skillsData": {
-    "Frontend Development": [
-      "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "React Native",
-      "Next.js", "Angular", "Redux", "Tailwind CSS", "Bootstrap", "Material UI",
-      "Ant Design", "SASS", "LESS", "Accessibility", "SEO", "Performance Optimization"
-    ],
-    "Backend Development": [
-      "Python", "Java", "Django", "Express.js", "Node.js", "MongoDB", "PostgreSQL",
-      "SQL", "NoSQL", "RESTful APIs", "GraphQL", "Authentication", "Authorization",
-      "OAuth", "JWT", "RabbitMQ", "Microservices", "Serverless (AWS Lambda)"
-    ],
-    "DevOps & Testing": [
-      "AWS", "Unit Testing", "Integration Testing", "End-to-End Testing", "Jest",
-      "Cypress", "React Testing Library", "React Native Testing Library", "pytest",
-      "pytest-django", "CI/CD", "Docker"
-    ],
-    "Core Skills": [
-      "Data Structures", "Algorithms", "Authentication", "Agile", "Git", "Code Reviews",
-      "Problem Solving", "Debugging", "Clean code", "Adaptability", "SOLID/DRY"
-    ]
   }
-}
+  

@@ -10,7 +10,7 @@ const defaultData = {
         linkedin: "https://linkedin.com/in/example",
         medium: "https://medium.com/@example"
     },
-    aboutMeData: "Portfolio information not available at the moment.",
+    aboutMeData: ["Portfolio information not available at the moment."],
     experienceData: [],
     projectsData: [],
     blogsData: [],

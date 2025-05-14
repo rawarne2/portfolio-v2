@@ -7,16 +7,16 @@ const urlString = z.string().url("Must be a valid URL").max(200, "URL must not e
 export const ProjectSchema = z.object({
     id: z.number(),
     title: z.string().max(50, "Title must not exceed 50 characters"),
-    image: z.union([z.custom<StaticImageData>(), z.string().max(200, "Image URL must not exceed 200 characters")]),
-    description: z.string().max(1000, "Description must not exceed 1000 characters"),
-    technologies: z.array(z.string().max(25, "Technology must not exceed 25 characters")),
+    images: z.array(z.string().max(200, "Image URL must not exceed 200 characters")),
+    description: z.string().max(2000, "Description must not exceed 2000 characters"),
+    technologies: z.array(z.string().max(50, "Technology must not exceed 50 characters")),
     github: z.array(urlString),
     preview: z.string().max(200, "Preview must not exceed 200 characters").optional(),
     link: urlString.optional(),
 });
 
 export const ExperienceSchema = z.object({
-    cardDetailedText: z.string().max(1000, "Card detailed text must not exceed 1000 characters").optional(),
+    cardDetailedText: z.string().max(2000, "Card detailed text must not exceed 2000 characters").optional(),
     cardSubtitle: z.string().max(100, "Card subtitle must not exceed 100 characters").optional(),
     cardTitle: z.string().max(100, "Card title must not exceed 100 characters").optional(),
     date: nonEmptyString,
@@ -40,6 +40,8 @@ export const UrlsSchema = z.object({
     github: urlString,
     linkedin: urlString,
     medium: urlString.optional(),
+    profilePic: urlString.optional(),
+    resume: urlString.optional(),
 });
 
 export const SkillsSchema = z.object({
@@ -52,7 +54,7 @@ export const SkillsSchema = z.object({
 export const DataSchema = z.object({
     name: nonEmptyString,
     urls: UrlsSchema,
-    aboutMeData: nonEmptyString.max(1000, "About me data must not exceed 1000 characters"),
+    aboutMeData: z.array(nonEmptyString),
     experienceData: z.array(ExperienceSchema),
     projectsData: z.array(ProjectSchema),
     blogsData: z.array(BlogSchema),
@@ -76,8 +78,8 @@ export type DataType = z.infer<typeof DataSchema>;
 // Re-export the sections array
 export const sections: SectionType[] = [
     { id: 'about-me', title: 'About Me' },
-    { id: 'skills', title: 'My Skills' },
-    { id: 'experience', title: 'Experience' },
     { id: 'projects', title: 'Projects' },
+    { id: 'experience', title: 'Experience' },
     { id: 'blogs', title: 'Blogs' },
+    { id: 'skills', title: 'My Skills' },
 ]; 
