@@ -183,7 +183,7 @@
           "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/dynasty-dashboard-2.png",
           "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/dynasty-dashboard-3.png"
         ],
-        "link": "https://www.rashaunwarner.com"
+        "link": "https://sleeper-dashboard-xi.vercel.app/"
       },
       {
         "id": 2,
@@ -209,7 +209,7 @@
           "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/memory-game-2.png",
           "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/memory-game-3.png"
         ],
-        "link": "https://memory-game.vercel.app/"
+        "link": "https://memory-game-rho-lemon.vercel.app/"
       },
       {
         "id": 3,
