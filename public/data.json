@@ -7,11 +7,32 @@
         "profilePic": "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/profile-pic.jpg",
         "resume": "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/rashaun-warner-resume.pdf"
     },
-    "aboutMeData": ["Hello World! I'm a Full-Stack Developer with a frontend focus and a passion for creating fast, scalable web and mobile apps using React, React Native, and Next.js. I'm an expert in JavaScript, TypeScript, and Python, with experience using backend frameworks like Express.js and Django, as well as various AWS services. I transitioned from a career in health and fitness to software development after teaching myself to code, then graduating from Fullstack Academy's Software Engineering Immersive Bootcamp, which taught me full-stack JavaScript using React and Express.js.", 
-    "I started my tech career as a Software Engineer Apprentice at 84.51° with a mentor from Launch Scout, where I learned Java, Angular, and TypeScript, while working on Kroger's precision marketing platform. At Kinetic Vision, I led React and Python-based full-stack projects and managed co-ops, and at iFIT, I contributed to a mobile and embedded app with 6+ million users utilizing React, Node.js, and AWS developing new features, optimizing performance, and fixing critical bugs. Currently, I work as a Software Developer - AI Trainer at DataAnnotation.tech, designing prompts, write and test code, and evaluate AI-generated responses to help improve the quality and accuracy of coding models."],
+    "aboutMeData": ["Hello World! I'm a Full-Stack Developer with a frontend focus and a passion for creating fast, scalable web and mobile apps. I transitioned from a career in health and fitness to software development after teaching myself to code, then graduating from Fullstack Academy's Software Engineering Immersive Bootcamp.", 
+    "I started my tech career as a Software Engineer Apprentice at 84.51° with a mentor from Launch Scout, working on Kroger's precision marketing platform. At Kinetic Vision, I led full-stack projects and managed co-ops. At iFIT, I contributed to a mobile and embedded app with 6+ million users by developing new features, optimizing performance, and fixing critical bugs. Most recently at Deep Sentinel, I engineered new full-stack features for web and mobile applications and optimized development workflows and test coverage. Currently, I work as a Software Developer - AI Trainer at DataAnnotation.tech, designing prompts, writing and testing code, and evaluating AI-generated responses to help improve the quality and accuracy of coding models."],
     "experienceData": [
       {
         "id": 1,
+        "company": "Deep Sentinel",
+        "jobTitle": "Software Engineer",
+        "location": "Cincinnati, OH / Remote",
+        "description": "I engineered new features and maintained full-stack applications using React, React Native, and Flask microservices. I optimized the local development environment and containerized workflows with Docker and MySQL, significantly improving developer productivity. Additionally, I enhanced system reliability by scaling automated test coverage, implementing rigorous data validation, and resolving critical production bugs to ensure a seamless user experience.",
+        "date": "2025 — 2026",
+        "tools": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "MySQL",
+          "React",
+          "React Native",
+          "Flask",
+          "Node.js",
+          "Docker",
+          "GitHub Actions",
+          "GCP"
+        ]
+      },
+      {
+        "id": 2,
         "company": "DataAnnotations / Outlier.ai",
         "jobTitle": "Software Developer - AI Trainer",
         "location": "Cincinnati, OH / Remote",
@@ -32,12 +53,12 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "company": "Codementor.io",
         "jobTitle": "Software Engineer and Mentor",
         "location": "Cincinnati, OH / Remote",
         "description": "Clients schedule mentoring sessions with me for expert guidance in software development. Provide code reviews, write code for various projects, and debug issues.",
-        "date": "2023 — Present",
+        "date": "2023 — 2025",
         "tools": [
           "TypeScript",
           "JavaScript",
@@ -50,7 +71,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 4,
         "company": "iFIT",
         "jobTitle": "Software Engineer",
         "location": "Cincinnati, OH / Remote",
@@ -71,7 +92,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 5,
         "company": "Kinetic Vision",
         "jobTitle": "Full Stack Web Developer",
         "location": "Cincinnati, OH",
@@ -107,7 +128,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 6,
         "company": "84.51",
         "jobTitle": "Developer Apprentice",
         "location": "Cincinnati, OH",
@@ -188,7 +209,7 @@
       {
         "id": 2,
         "title": "NutriYum",
-        "description": "NutriYum is a mobile app built with React Native for iOS and Android. NutriYum keeps track of all the nutrients in what you eat so you don't have to, making your diet management as simple and easy as possible. You can take a picture of your food and the app will tell you the nutritional breakown and save it to your profile. You can also search for foods and add them as well. Track your progress and see how you're doing over time. All you have to do is snap what you eat then bon appétit!",
+        "description": "NutriYum is a mobile app built with React Native for iOS and Android. NutriYum keeps track of all the nutrients in what you eat so you don't have to, making your diet management as simple and easy as possible. You can take a picture of your food and the app will tell you the nutritional breakdown and save it to your profile. You can also search for foods and add them as well. Track your progress and see how you're doing over time. All you have to do is snap what you eat then bon appétit!",
         "technologies": ["React Native", "Redux", "JavaScript", "Node.js", "Express.js", "PostgreSQL", "AWS S3", "IBM Watson", "Docker"],
         "github": ["https://github.com/NutriYum"],
         "images": [

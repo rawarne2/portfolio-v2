@@ -93,7 +93,7 @@ export default function AboutMe({
             </div>
           </div>
           {/* About Me Text */}
-          <div className='md:col-span-3 text-base whitespace-pre-line indent-4 md:indent-8 p-8 md:pl-0'>
+          <div className='md:col-span-3 text-base whitespace-pre-line indent-4 md:indent-8 p-8 md:pl-0 my-auto'>
             {data?.aboutMeData.map((item, idx) => (
               <p key={idx}>{item}</p>
             ))}
