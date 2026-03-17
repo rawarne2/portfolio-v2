@@ -152,6 +152,19 @@
     ],
     "projectsData": [
       {
+        "id": 5,
+        "title": "Preferences Game",
+        "description": "Preferences is a mobile-friendly, multiplayer party game played with a group of people on a single device or online with websockets. The goal is to achieve the highest score possible by accurately predicting the target player's preferences for a set of cards. Points are deducted depending on how far off your or your group's guess is to the target player's order of preferences. I came up with the rules and designed the game myself. The frontend was built with React and the backend was built with Node.js and Express.js for you to run locally. The production game is pointed at an AWS AppSync implementation. This project is actively in development.",
+        "technologies": ["React", "TypeScript", "Node.js", "Express.js", "Socket.io", "Render", "TailwindCSS"],
+        "github": ["https://github.com/rawarne2/preferences-game"],
+        "images": [
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-1.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-2.png",
+          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-3.png"
+        ],
+        "link": "https://rashaungames.com"
+      },
+      {
         "id": 1,
         "title": "Top 5 Dating App",
         "description": "Dating app that limits how many people a user can stay matched with at a time to encourage more quality communication. Please do not use or share this project idea in any way. This project is semi-active. Click 'View' to see a screen recording of the project so far.",
@@ -179,19 +192,6 @@
           "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/top5-3.png"
         ],
         "link": "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/top5-screen-recording.mp4"
-      },
-      {
-        "id": 5,
-        "title": "Preferences Game",
-        "description": "Preferences is a mobile-friendly, multiplayer party game played with a group of people on a single device or online with websockets. The goal is to achieve the highest score possible by accurately predicting the target player's preferences for a set of cards. Points are deducted depending on how far off your or your group's guess is to the target player's order of preferences. I came up with the rules and designed the game myself. The frontend was built with React and the backend was built with Node.js and Express.js for you to run locally. The production game is pointed at an AWS AppSync implementation. This project is actively in development.",
-        "technologies": ["React", "TypeScript", "Node.js", "Express.js", "Socket.io", "AWS Appsync", "TailwindCSS"],
-        "github": ["https://github.com/rawarne2/preferences-game"],
-        "images": [
-          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-1.png",
-          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-2.png",
-          "https://rashaun-warner-portfolio-v2.s3.us-east-2.amazonaws.com/preferences-3.png"
-        ],
-        "link": "https://rashaungames.com"
       },
       {
         "id": 6,
